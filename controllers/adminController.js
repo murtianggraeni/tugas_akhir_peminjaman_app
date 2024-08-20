@@ -67,6 +67,7 @@ const handlePeminjaman = {
         const { peminjamanId, type } = req.params;
 
         try {
+            // Cek apakah user memiliki role admin
             const user = await User.findOne({
                 _id: userId,
                 role: "admin",
@@ -79,13 +80,18 @@ const handlePeminjaman = {
                 });
             }
 
+            // Pilih model yang sesuai berdasarkan tipe
             const Model = getModelByType(type);
+
+            // Cari peminjaman berdasarkan ID
             const peminjaman = await Model.findById(peminjamanId);
+            console.log(peminjaman); // Tambahkan log untuk melihat apakah data ditemukan
 
             if (!peminjaman) {
                 return res.status(404).json({ message: 'Data tidak ditemukan' });
             }
 
+            // Siapkan data yang akan dikirim sebagai respons
             const responseData = {
                 id: peminjaman._id,
                 email: peminjaman.email,
