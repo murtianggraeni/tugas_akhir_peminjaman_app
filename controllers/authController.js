@@ -1,3 +1,4 @@
+// authController
 const User = require('../models/userModel');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -40,12 +41,14 @@ const register = async (req, res) => {
             password: hashPassword, 
             role: role
         });
+        console.log("User created with role: ", newUser.role); // Tambahkan log ini untuk debug
         res.status(201).json({
             success: true,
             statusCode: res.statusCode,
             message: "Register Successfully"
         })
     } catch (error) {
+        console.log("Error creating user: ", error); // Log the error
         res.status(500).json({
             success: false,
             statusCode: res.statusCode,
@@ -99,12 +102,15 @@ const login = async (req, res) => {
         const userId = user._id;
         const userName = user.username;
         const emailId = user.email;
+        const userRole = user.role;
+
+        console.log("User logged in with role: ", userRole); // Tambahkan log ini untuk debug
     
         const accessToken = jwt.sign({
-            userId, userName, emailId
+            userId, userName, emailId, userRole
         }, process.env.ACCESS_TOKEN_SECRET);
         const refreshToken = jwt.sign({
-            userId, userName, emailId
+            userId, userName, emailId, userRole
         }, process.env.REFRESH_TOKEN_SECRET);
     
         await User.updateOne(
@@ -125,6 +131,7 @@ const login = async (req, res) => {
                 userId,
                 email,
                 userName,
+                userRole,
                 accessToken
             }
         })

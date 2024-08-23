@@ -4,6 +4,7 @@ const cors = require('cors');
 const routeUser = require('./routes/routeAuth');
 const routePeminjaman = require('./routes/routeUser');
 const routeAdmin = require('./routes/routeAdmin');
+const routeSensor = require('./routes/routeSensor');
 const connectDb = require('./config/db');
 
 const app = express();
@@ -18,6 +19,7 @@ app.get('/', (req, res) => {
 app.use('/admin', routeAdmin);
 app.use('/auth', routeUser);
 app.use('/user', routePeminjaman);
+app.use('/sensor', routeSensor);
 
 const port = process.env.PORT || 3000
 app.listen(port, () => {

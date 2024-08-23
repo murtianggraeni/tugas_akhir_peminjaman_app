@@ -1,3 +1,5 @@
+// routeAdmin
+
 const express = require('express');
 const authenticate = require('../middleware/verifyToken');
 const handlePeminjaman = require('../controllers/adminController.js');

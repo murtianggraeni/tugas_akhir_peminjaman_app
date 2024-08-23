@@ -1,3 +1,5 @@
+// admin controller
+
 const { Cnc, Laser, Printing } = require('../models/peminjamanModel');
 const User = require('../models/userModel');
 
