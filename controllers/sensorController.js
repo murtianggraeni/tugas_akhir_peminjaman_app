@@ -1,3 +1,5 @@
+// sensorController.js
+
 const { CncSensor, LaserSensor, PrintingSensor } = require('../models/sensorModel');
 
 const getModelByType = (type) => {

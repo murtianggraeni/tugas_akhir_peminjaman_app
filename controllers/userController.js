@@ -1,4 +1,4 @@
-// user controller
+// userController.js
 const { google } = require('googleapis');
 const { Readable } = require('stream');
 const { Cnc, Laser, Printing } = require('../models/peminjamanModel');
@@ -79,7 +79,8 @@ const peminjamanHandler = async (req, res) => {
     
     const { email, nama_pemohon, tanggal_peminjaman, awal_peminjaman, akhir_peminjaman, jumlah, jurusan, detail_keperluan, program_studi, kategori } = req.body;
     const { userId, userName } = req.username;
-
+    
+    // Validasi jika diperlukan
     if ((kategori === 'Praktek' || kategori === 'Proyek Mata Kuliah') && (!detail_keperluan || detail_keperluan.trim().length === 0)) {
         return res.status(400).json({
             success: false,
@@ -87,6 +88,34 @@ const peminjamanHandler = async (req, res) => {
             message: "Detail keperluan wajib diisi"
         });
     }
+
+    let convertedAwalPeminjaman;
+    let convertedAkhirPeminjaman;
+
+    // Convert awal_peminjaman and akhir_peminjaman to Date objects
+    if (awal_peminjaman) {
+        convertedAwalPeminjaman = convertTimeStringToDate(awal_peminjaman);
+    }
+    if (akhir_peminjaman) {
+        convertedAkhirPeminjaman = convertTimeStringToDate(akhir_peminjaman);
+    }
+
+    // Tentukan alamat_esp berdasarkan nama_mesin
+    let alamat_esp;
+    switch (mesinName.toLowerCase()) {
+        case 'cnc milling':
+            alamat_esp = "https://kh8ppwzx-3000.asse.devtunnels.ms/sensor/cnc/buttonPeminjaman";
+            break;
+        case 'laser cutting':
+            alamat_esp = "https://kh8ppwzx-3000.asse.devtunnels.ms/sensor/laser/buttonPeminjaman";
+            break;
+        case '3d printing':
+            alamat_esp = "https://kh8ppwzx-3000.asse.devtunnels.ms/sensor/printing/buttonPeminjaman";
+            break;
+        default:
+            return res.status(400).json({ message: 'Invalid machine name' });
+    }
+
     // if (!email || !nama_pemohon || !tanggal_peminjaman || !awal_peminjaman || !akhir_peminjaman || !jumlah || !program_studi || !kategori || !req.file) {
     //     return res.status(400).json({
     //         success: false,
@@ -95,14 +124,17 @@ const peminjamanHandler = async (req, res) => {
     //     });
     // }
 
+
     try {
         // const fileLink = await uploadFileToDrive(req.file.buffer, req.file.originalname);
-
-
         const peminjamanEntry = await Model.create({
             nama_mesin: mesinName,
+            alamat_esp,  // Menyimpan alamat_esp yang telah ditentukan
             email,
             nama_pemohon,
+            // tanggal_peminjaman: new Date(tanggal_peminjaman), // Pastikan ini dalam format ISO 8601 atau Date object
+            // awal_peminjaman: convertedAwalPeminjaman,
+            // akhir_peminjaman: convertedAkhirPeminjaman,
             tanggal_peminjaman,
             awal_peminjaman,
             akhir_peminjaman,
@@ -122,11 +154,15 @@ const peminjamanHandler = async (req, res) => {
             message: "Uploaded!",
             data: {
                 nama_mesin: peminjamanEntry.nama_mesin,
+                alamat_esp,  // Sertakan alamat_esp dalam respons jika diperlukan
                 email,
                 nama_pemohon,
-                tanggal_peminjaman,
-                awal_peminjaman,
-                akhir_peminjaman,
+                tanggal_peminjaman: peminjamanEntry.tanggal_peminjaman,
+                awal_peminjaman: peminjamanEntry.awal_peminjaman,
+                akhir_peminjaman: peminjamanEntry.akhir_peminjaman,
+                // tanggal_peminjaman,
+                // awal_peminjaman,
+                // akhir_peminjaman,
                 jumlah,
                 jurusan,
                 detail_keperluan,
@@ -146,6 +182,22 @@ const peminjamanHandler = async (req, res) => {
         });
     }
 };
+
+// Helper function to convert time string to a Date object
+function convertTimeStringToDate(timeString) {
+    if (!timeString) return null;
+    const [time, modifier] = timeString.split(' ');
+    let [hours, minutes] = time.split(':');
+    if (modifier === 'PM' && hours !== '12') {
+        hours = parseInt(hours, 10) + 12;
+    }
+    if (modifier === 'AM' && hours === '12') {
+        hours = '00';
+    }
+    const date = new Date();
+    date.setHours(parseInt(hours), parseInt(minutes), 0, 0);
+    return date;
+}
 
 const getPeminjamanAllHandler = async (req, res) => {
     const { userId } = req.username; // Asumsi userId diambil dari req.username
@@ -179,7 +231,10 @@ const getPeminjamanAllHandler = async (req, res) => {
             id: item._id,
             nama_pemohon: item.nama_pemohon,
             nama_mesin: item.nama_mesin,
-            tanggal_peminjaman: item.tanggal_peminjaman,
+            alamat_esp: item.alamat_esp,
+            tanggal_peminjaman: item.tanggal_peminjaman, // Pastikan dikirim sebagai ISO 8601
+            awal_peminjaman: item.awal_peminjaman, // Pastikan dikirim sebagai ISO 8601
+            akhir_peminjaman: item.akhir_peminjaman, // Pastikan dikirim sebagai ISO 8601
             status: item.status,
             waktu: item.waktu,
         }));
@@ -219,6 +274,7 @@ const getPeminjamanByIdHandler = async (req, res) => {
         const responseData = {
             id: peminjaman._id,
             nama_mesin: peminjaman.nama_mesin,
+            alamat_esp: peminjaman.alamat_esp,
             email: peminjaman.user.email, // pastikan `user` telah dipopulasi
             nama_pemohon: peminjaman.nama_pemohon,
             tanggal_peminjaman: peminjaman.tanggal_peminjaman,

@@ -1,9 +1,13 @@
+// peminjamanModel.js
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const peminjamanSchema = new mongoose.Schema({
     nama_mesin: {
         type: String,
+    },
+    alamat_esp: {
+        type: String,  // URL untuk mengakses ESP32 yang sesuai
     },
     email: {
         type: String,
@@ -100,8 +104,8 @@ const peminjamanSchema = new mongoose.Schema({
         type: String,
     },
     user: {
-         type: Schema.Types.ObjectId, 
-         ref: 'User' 
+        type: Schema.Types.ObjectId, 
+        ref: 'User' 
     },
     waktu: {
         type: Date,
@@ -114,3 +118,23 @@ const Laser = mongoose.model('Laser', peminjamanSchema);
 const Printing = mongoose.model('Printing', peminjamanSchema);
 
 module.exports = {Cnc, Laser, Printing};
+
+// tanggal_peminjaman: {
+//     type: Date,
+//     get: (value) => value ? value.toISOString() : null,
+// },
+// awal_peminjaman: {
+//     type: Date,
+//     get: (value) => value ? value.toISOString() : null,
+// },
+// akhir_peminjaman: {
+//     type: Date,
+//     get: (value) => value ? value.toISOString() : null,
+// },
+// // -- Metode 2 --
+// // awal_peminjaman: {
+// //     type: Date,  // Tidak perlu format manual, gunakan ISO 8601 default
+// // },
+// // akhir_peminjaman: {
+// //     type: Date,  // Tidak perlu format manual, gunakan ISO 8601 default
+// // },
