@@ -12,5 +12,6 @@ router.get('/:type/:peminjamanId', authenticate, handlePeminjaman.getPeminjamanB
 // put di node js untuk update
 router.put('/:type/:peminjamanId/disetujui', authenticate, handlePeminjaman.editDisetujui);
 router.put('/:type/:peminjamanId/ditolak', authenticate, handlePeminjaman.editDitolak);
+router.delete('/:type/:peminjamanId/', authenticate, handlePeminjaman.deletePeminjamanById);
 
 module.exports = router;

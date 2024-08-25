@@ -21,6 +21,8 @@ const handlePeminjaman = {
         const { userId } = req.username;
         const { type } = req.params;
 
+        console.log(`Received request for type: ${type}`);  // Logging untuk memastikan type benar
+
         try {
             const user = await User.findOne({
                 _id: userId,
@@ -34,8 +36,14 @@ const handlePeminjaman = {
                 });
             }
 
+            console.log(`Admin ${userId} is requesting ${type} data`);
+
             const Model = getModelByType(type);
             const peminjamanForm = await Model.find();
+
+            if (!peminjamanForm || peminjamanForm.length === 0) {
+            return res.status(404).json({ message: 'Data tidak ditemukan' });
+            }
             
             peminjamanForm.sort((a, b) => {
                 if (a.status === 'Menunggu' && (b.status === 'Disetujui' || b.status === 'Ditolak')) return -1;
@@ -60,6 +68,7 @@ const handlePeminjaman = {
             });
 
         } catch (err) {
+            console.error(`Error fetching ${type} data for admin ${userId}:`, err);
             res.status(500).json({ error: err.message });
         }
     },
@@ -238,7 +247,46 @@ const handlePeminjaman = {
                 message: "Error updating peminjaman status.",
             });
         }
+    },
+
+    deletePeminjamanById: async (req, res) => {
+        const { userId } = req.username;
+        const { peminjamanId, type } = req.params;
+    
+        try {
+            const user = await User.findOne({
+                _id: userId,
+                role: "admin",
+            });
+    
+            if (!user) {
+                return res.status(403).json({
+                    success: false,
+                    message: "Unauthorized. Only admin can delete peminjaman.",
+                });
+            }
+    
+            const Model = getModelByType(type);
+            const peminjaman = await Model.findByIdAndDelete(peminjamanId);
+    
+            if (!peminjaman) {
+                return res.status(404).json({
+                    success: false,
+                    message: "Peminjaman not found.",
+                });
+            }
+    
+            res.status(200).json({
+                success: true,
+                message: "Peminjaman deleted successfully.",
+            });
+    
+        } catch (err) {
+            console.error(`Error deleting peminjaman for admin ${userId}:`, err);
+            res.status(500).json({ error: err.message });
+        }
     }
+    
 };
 
 module.exports = handlePeminjaman;

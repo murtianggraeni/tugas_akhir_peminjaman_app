@@ -21,7 +21,7 @@ app.use('/auth', routeUser);
 app.use('/user', routePeminjaman);
 app.use('/sensor', routeSensor);
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT ||3000
 app.listen(port, () => {
     console.log(`Server berjalan di port ${port}`);
 })
