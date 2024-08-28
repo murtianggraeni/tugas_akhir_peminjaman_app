@@ -111,7 +111,27 @@ const peminjamanSchema = new mongoose.Schema({
         type: Date,
         default: Date.now,
       },
-})
+});
+
+peminjamanSchema.pre('save', async function(next) {
+    const now = new Date();
+    if ((this.status === 'Menunggu' || this.status === 'Diproses') && now > this.awal_peminjaman) {
+        this.status = 'Ditolak';
+        this.alasan = 'Peminjaman otomatis ditolak karena melebihi batas awal peminjaman.';
+        console.log(`Peminjaman ${this._id} ditolak otomatis karena melewati batas waktu.`);
+    }
+    next();
+});
+
+peminjamanSchema.pre('findOneAndUpdate', async function(next) {
+    const now = new Date();
+    const docToUpdate = await this.model.findOne(this.getQuery());
+    if (docToUpdate && (docToUpdate.status === 'Menunggu' || docToUpdate.status === 'Diproses') && now > docToUpdate.awal_peminjaman) {
+        this.set({ status: 'Ditolak', alasan: 'Peminjaman otomatis ditolak karena melebihi batas awal peminjaman.' });
+        console.log(`Peminjaman ${docToUpdate._id} ditolak otomatis saat update karena melewati batas waktu.`);
+    }
+    next();
+});
 
 const Cnc = mongoose.model('Cnc', peminjamanSchema);
 const Laser = mongoose.model('Laser', peminjamanSchema);

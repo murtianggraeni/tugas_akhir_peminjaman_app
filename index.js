@@ -6,6 +6,7 @@ const routePeminjaman = require('./routes/routeUser');
 const routeAdmin = require('./routes/routeAdmin');
 const routeSensor = require('./routes/routeSensor');
 const connectDb = require('./config/db');
+const autoRejectPeminjaman = require('./tasks/cronJobs'); // Mengimpor cronJobs.js untuk memulai cron job
 
 const app = express();
 
@@ -14,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 connectDb();
 app.get('/', (req, res) => {
-    res.send("Api Ready")
+    res.send("API Ready")
 })
 app.use('/admin', routeAdmin);
 app.use('/auth', routeUser);

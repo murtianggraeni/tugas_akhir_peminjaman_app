@@ -1,4 +1,5 @@
 // userController.js
+const axios = require('axios'); // Untuk mengirim request ke ESP32
 const { google } = require('googleapis');
 const { Readable } = require('stream');
 const { Cnc, Laser, Printing } = require('../models/peminjamanModel');
@@ -197,11 +198,14 @@ function convertTimeStringToDate(timeString) {
     const date = new Date();
     date.setHours(parseInt(hours), parseInt(minutes), 0, 0);
     return date;
-}
+};
+
+
 
 const getPeminjamanAllHandler = async (req, res) => {
     const { userId } = req.username; // Asumsi userId diambil dari req.username
     try {
+         // Periksa dan perbarui status sebelum mengambil data
         // Ambil data dari ketiga model berdasarkan userId
         const cncPeminjaman = await Cnc.find({ user: userId });
         const laserPeminjaman = await Laser.find({ user: userId });
@@ -302,9 +306,84 @@ const getPeminjamanByIdHandler = async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 };
+
+const extendPeminjamanHandler = async (req, res) => {
+    const { peminjamanId } = req.params;
+    const { newEndTime } = req.body; // newEndTime dalam format ISO 8601
+    const { userId } = req.username; // Asumsi userId diambil dari token yang didekode
+
+    try {
+        // Cari peminjaman berdasarkan ID
+        let peminjaman = await Cnc.findOne({ _id: peminjamanId, user: userId });
+        if (!peminjaman) {
+            peminjaman = await Laser.findOne({ _id: peminjamanId, user: userId });
+        }
+        if (!peminjaman) {
+            peminjaman = await Printing.findOne({ _id: peminjamanId, user: userId });
+        }
+
+        if (!peminjaman) {
+            return res.status(404).json({ message: 'Data tidak ditemukan' });
+        }
+
+        // Update akhir_peminjaman dengan waktu baru
+        peminjaman.akhir_peminjaman = new Date(newEndTime);
+        await peminjaman.save();
+
+        // Kirimkan perubahan ke ESP32
+        const response = await axios.post(peminjaman.alamat_esp, {
+            newEndTime: peminjaman.akhir_peminjaman.toISOString(),
+        });
+
+        res.status(200).json({
+            success: true,
+            statusCode: res.statusCode,
+            message: 'Waktu peminjaman berhasil diperpanjang',
+            data: peminjaman,
+        });
+
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({
+            success: false,
+            message: 'Terjadi kesalahan saat memperpanjang waktu peminjaman',
+        });
+    }
+};
+
+const updateExpiredPeminjaman = async () => {
+    const now = new Date();
+    const models = [Cnc, Laser, Printing];
+    let totalUpdated = 0;
+
+    for (const Model of models) {
+        const result = await Model.updateMany(
+            { 
+                status: { $in: ['Menunggu', 'Diproses'] },
+                awal_peminjaman: { $lt: now }
+            },
+            { 
+                $set: { 
+                    status: 'Ditolak',
+                    alasan: 'Peminjaman otomatis ditolak karena melebihi batas awal peminjaman.'
+                }
+            }
+        );
+        totalUpdated += result.nModified;
+    }
+
+    console.log(`${totalUpdated} peminjaman diperbarui pada ${now}`);
+};
+
+// Jalankan fungsi ini secara berkala, misalnya setiap 5 menit
+const updateInterval = 5 * 60 * 1000; // 5 menit dalam milidetik
+setInterval(updateExpiredPeminjaman, updateInterval);
+
 module.exports = {
     upload,
     peminjamanHandler,
     getPeminjamanAllHandler,
-    getPeminjamanByIdHandler
+    getPeminjamanByIdHandler,
+    extendPeminjamanHandler,
+    updateExpiredPeminjaman
 };
