@@ -285,7 +285,79 @@ const handlePeminjaman = {
             console.error(`Error deleting peminjaman for admin ${userId}:`, err);
             res.status(500).json({ error: err.message });
         }
-    }
+    },
+
+    getMonitoringData: async (req, res) => {
+        const { userId } = req.username;
+        const { type } = req.params;
+        const Model = getModelByType(type);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        try {
+            const user = await User.findOne({
+                _id: userId,
+                role: "admin",
+            });
+
+            if (!user) {
+                return res.status(403).json({
+                    success: false,
+                    message: "Unauthorized. Only admin can access monitoring data.",
+                });
+            }
+
+            const activePeminjaman = await Model.find({
+                status: 'Disetujui',
+                awal_peminjaman: { $lte: new Date() },
+                akhir_peminjaman: { $gte: today }
+            });
+
+            let totalDurationToday = 0;
+            let totalDurationAll = 0;
+            let userCountToday = 0;
+            let userCountAll = activePeminjaman.length;
+            const userDetails = [];
+
+            activePeminjaman.forEach(peminjaman => {
+                const startTime = new Date(Math.max(peminjaman.awal_peminjaman, today));
+                const endTime = new Date(Math.min(peminjaman.akhir_peminjaman, new Date()));
+                const duration = (endTime - startTime) / (1000 * 60 * 60); // dalam jam
+
+                totalDurationAll += duration;
+                
+                if (peminjaman.awal_peminjaman >= today) {
+                    totalDurationToday += duration;
+                    userCountToday++;
+                }
+
+                userDetails.push({
+                    nama: peminjaman.nama_pemohon,
+                    kategori: peminjaman.kategori,
+                    penggunaan: peminjaman.detail_keperluan,
+                    durasi: `${Math.floor(duration)}j ${Math.floor((duration % 1) * 60)}m`
+                });
+            });
+
+            res.status(200).json({
+                success: true,
+                data: {
+                    totalDurationToday: `${Math.floor(totalDurationToday)}j ${Math.floor((totalDurationToday % 1) * 60)}m`,
+                    totalDurationAll: `${Math.floor(totalDurationAll)}j ${Math.floor((totalDurationAll % 1) * 60)}m`,
+                    userCountToday,
+                    userCountAll,
+                    userDetails
+                }
+            });
+
+        } catch (error) {
+            console.error('Error getting monitoring data:', error);
+            res.status(500).json({
+                success: false,
+                message: "Error getting monitoring data.",
+            });
+        }
+    },
     
 };
 
