@@ -9,7 +9,8 @@ const router = express.Router();
 router.post('/:type/peminjaman', authenticate, upload.single('desain_benda'), peminjamanHandler);
 router.get('/peminjamanAll', authenticate, getPeminjamanAllHandler);
 router.get('/peminjaman/:peminjamanId', authenticate, getPeminjamanByIdHandler);
-router.put('/peminjaman/:peminjamanId', authenticate, extendPeminjamanHandler);
+// Rute untuk perpanjangan peminjaman
+router.put('/peminjaman/:peminjamanId/extend', authenticate, extendPeminjamanHandler);
 
 
 router.get('/counts', authenticate, getCounts);

@@ -309,11 +309,10 @@ const getPeminjamanByIdHandler = async (req, res) => {
 
 const extendPeminjamanHandler = async (req, res) => {
     const { peminjamanId } = req.params;
-    const { newEndTime } = req.body; // newEndTime dalam format ISO 8601
-    const { userId } = req.username; // Asumsi userId diambil dari token yang didekode
+    const { newEndTime } = req.body;
+    const { userId } = req.username;
 
     try {
-        // Cari peminjaman berdasarkan ID
         let peminjaman = await Cnc.findOne({ _id: peminjamanId, user: userId });
         if (!peminjaman) {
             peminjaman = await Laser.findOne({ _id: peminjamanId, user: userId });
@@ -326,27 +325,40 @@ const extendPeminjamanHandler = async (req, res) => {
             return res.status(404).json({ message: 'Data tidak ditemukan' });
         }
 
-        // Update akhir_peminjaman dengan waktu baru
+        const now = new Date();
+        if (now > peminjaman.akhir_peminjaman) {
+            return res.status(400).json({ message: 'Peminjaman sudah berakhir' });
+        }
+
+        if (peminjaman.extended_count >= 2) {
+            return res.status(400).json({ message: 'Batas perpanjangan sudah tercapai' });
+        }
+
         peminjaman.akhir_peminjaman = new Date(newEndTime);
+        peminjaman.extended_count += 1;
         await peminjaman.save();
 
-        // Kirimkan perubahan ke ESP32
-        const response = await axios.post(peminjaman.alamat_esp, {
-            newEndTime: peminjaman.akhir_peminjaman.toISOString(),
-        });
+        // Kirim update ke ESP32
+        try {
+            await axios.post(peminjaman.alamat_esp, {
+                button: true,
+                newEndTime: peminjaman.akhir_peminjaman.toISOString()
+            });
+        } catch (error) {
+            console.error('Error sending update to ESP32:', error);
+        }
 
         res.status(200).json({
             success: true,
-            statusCode: res.statusCode,
             message: 'Waktu peminjaman berhasil diperpanjang',
-            data: peminjaman,
+            data: peminjaman
         });
 
     } catch (err) {
         console.error(err);
         res.status(500).json({
             success: false,
-            message: 'Terjadi kesalahan saat memperpanjang waktu peminjaman',
+            message: 'Terjadi kesalahan saat memperpanjang waktu peminjaman'
         });
     }
 };

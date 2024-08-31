@@ -110,9 +110,25 @@ const peminjamanSchema = new mongoose.Schema({
     waktu: {
         type: Date,
         default: Date.now,
-      },
+    },
+    extended_count: {
+        type: Number,
+        default: 0
+    },
+    original_akhir_peminjaman: {
+        type: Date
+    }
 });
 
+// Pre-save hook untuk mengatur original_akhir_peminjaman
+peminjamanSchema.pre('save', function(next) {
+    if (this.isNew) {
+        this.original_akhir_peminjaman = this.akhir_peminjaman;
+    }
+    next();
+});
+
+// Pre-save hook untuk menolak jika sudah melewati jam peminjaman dan status masih diproses
 peminjamanSchema.pre('save', async function(next) {
     const now = new Date();
     if ((this.status === 'Menunggu' || this.status === 'Diproses') && now > this.awal_peminjaman) {
