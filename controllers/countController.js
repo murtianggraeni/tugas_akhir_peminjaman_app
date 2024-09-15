@@ -120,18 +120,259 @@
 
 // module.exports = { getCounts };
 
+// const Count = require('../models/countModel');
+// const {Cnc, Laser, Printing} = require('../models/peminjamanModel');
+// const { updateExpiredPeminjaman } = require('../controllers/userController');
+
+// const getCounts = async (req, res) => {
+//     try {
+//         console.log('Memulai proses penghitungan...');
+        
+//         await updateExpiredPeminjaman();
+//         console.log('Pembaruan status peminjaman selesai.');
+
+//         // Hitung dokumen untuk setiap status dan setiap tipe mesin
+//         const [
+//             disetujuiCnc, ditolakCnc, menungguCnc,
+//             disetujuiLaser, ditolakLaser, menungguLaser,
+//             disetujuiPrinting, ditolakPrinting, menungguPrinting
+//         ] = await Promise.all([
+//             Cnc.countDocuments({status: 'Disetujui'}),
+//             Cnc.countDocuments({status: 'Ditolak'}),
+//             Cnc.countDocuments({status: 'Menunggu'}),
+//             Laser.countDocuments({status: 'Disetujui'}),
+//             Laser.countDocuments({status: 'Ditolak'}),
+//             Laser.countDocuments({status: 'Menunggu'}),
+//             Printing.countDocuments({status: 'Disetujui'}),
+//             Printing.countDocuments({status: 'Ditolak'}),
+//             Printing.countDocuments({status: 'Menunggu'})
+//         ]);
+
+//         console.log('Penghitungan selesai.');
+
+//         const countData = {
+//             disetujui_cnc: disetujuiCnc,
+//             ditolak_cnc: ditolakCnc,
+//             menunggu_cnc: menungguCnc,
+//             disetujui_laser: disetujuiLaser,
+//             ditolak_laser: ditolakLaser,
+//             menunggu_laser: menungguLaser,
+//             disetujui_printing: disetujuiPrinting,
+//             ditolak_printing: ditolakPrinting,
+//             menunggu_printing: menungguPrinting,
+//             waktu: new Date(),
+//         };
+
+//         // Find the first document and update it, or create it if it doesn't exist
+//         const updatedCount = await Count.findOneAndUpdate(
+//             {},
+//             countData,
+//             { new: true, upsert: true }
+//         );
+
+//         console.log('Data count berhasil diperbarui.');
+
+//         res.status(200).json({
+//             success: true,
+//             status: res.statusCode,
+//             message: 'Counts retrieved and updated successfully',
+//             data: updatedCount,
+//         });
+//     } catch (error) {
+//         console.error('Error getting counts:', error);
+//         res.status(500).json({
+//             success: false,
+//             message: 'Error getting counts',
+//         });
+//     }
+// };
+
+// const getCounts = async (req, res) => {
+//     try {
+//         console.log('Memulai proses penghitungan...');
+        
+//         await updateExpiredPeminjaman();
+//         console.log('Pembaruan status peminjaman selesai.');
+
+//         // Tunggu sebentar untuk memastikan perubahan telah disimpan ke database
+//         await new Promise(resolve => setTimeout(resolve, 1000));
+
+//         // Hitung dokumen untuk setiap status dan setiap tipe mesin
+//         const [
+//             disetujuiCnc, ditolakCnc, menungguCnc,
+//             disetujuiLaser, ditolakLaser, menungguLaser,
+//             disetujuiPrinting, ditolakPrinting, menungguPrinting
+//         ] = await Promise.all([
+//             Cnc.countDocuments({status: 'Disetujui'}),
+//             Cnc.countDocuments({status: 'Ditolak'}),
+//             Cnc.countDocuments({status: 'Menunggu'}),
+//             Laser.countDocuments({status: 'Disetujui'}),
+//             Laser.countDocuments({status: 'Ditolak'}),
+//             Laser.countDocuments({status: 'Menunggu'}),
+//             Printing.countDocuments({status: 'Disetujui'}),
+//             Printing.countDocuments({status: 'Ditolak'}),
+//             Printing.countDocuments({status: 'Menunggu'})
+//         ]);
+
+//         console.log('Penghitungan selesai.');
+
+//         const countData = {
+//             disetujui_cnc: disetujuiCnc,
+//             ditolak_cnc: ditolakCnc,
+//             menunggu_cnc: menungguCnc,
+//             disetujui_laser: disetujuiLaser,
+//             ditolak_laser: ditolakLaser,
+//             menunggu_laser: menungguLaser,
+//             disetujui_printing: disetujuiPrinting,
+//             ditolak_printing: ditolakPrinting,
+//             menunggu_printing: menungguPrinting,
+//             waktu: new Date(),
+//         };
+
+//         // Find the first document and update it, or create it if it doesn't exist
+//         const updatedCount = await Count.findOneAndUpdate(
+//             {},
+//             countData,
+//             { new: true, upsert: true }
+//         );
+
+//         console.log('Data count berhasil diperbarui.');
+
+//         res.status(200).json({
+//             success: true,
+//             status: res.statusCode,
+//             message: 'Counts retrieved and updated successfully',
+//             data: updatedCount,
+//         });
+//     } catch (error) {
+//         console.error('Error getting counts:', error);
+//         res.status(500).json({
+//             success: false,
+//             message: 'Error getting counts',
+//             error: error.message
+//         });
+//     }
+// };
+
+// const getCounts = async (req, res) => {
+//     try {
+//         console.log('Memulai proses penghitungan...');
+        
+//         await updateExpiredPeminjaman();
+//         console.log('Pembaruan status peminjaman selesai.');
+
+//         // Tunggu sebentar untuk memastikan perubahan telah disimpan ke database
+//         await new Promise(resolve => setTimeout(resolve, 1000));
+
+//         // Hitung dokumen untuk setiap status dan setiap tipe mesin
+//         const [
+//             disetujuiCnc, ditolakCnc, menungguCnc,
+//             disetujuiLaser, ditolakLaser, menungguLaser,
+//             disetujuiPrinting, ditolakPrinting, menungguPrinting
+//         ] = await Promise.all([
+//             Cnc.countDocuments({status: 'Disetujui'}),
+//             Cnc.countDocuments({status: 'Ditolak'}),
+//             Cnc.countDocuments({status: 'Menunggu'}),
+//             Laser.countDocuments({status: 'Disetujui'}),
+//             Laser.countDocuments({status: 'Ditolak'}),
+//             Laser.countDocuments({status: 'Menunggu'}),
+//             Printing.countDocuments({status: 'Disetujui'}),
+//             Printing.countDocuments({status: 'Ditolak'}),
+//             Printing.countDocuments({status: 'Menunggu'})
+//         ]);
+
+//         console.log('Hasil penghitungan:', {
+//             cnc: { disetujui: disetujuiCnc, ditolak: ditolakCnc, menunggu: menungguCnc },
+//             laser: { disetujui: disetujuiLaser, ditolak: ditolakLaser, menunggu: menungguLaser },
+//             printing: { disetujui: disetujuiPrinting, ditolak: ditolakPrinting, menunggu: menungguPrinting }
+//         });
+
+//         // ... sisa kode tetap sama
+//     } catch (error) {
+//         console.error('Error getting counts:', error);
+//         res.status(500).json({
+//             success: false,
+//             message: 'Error getting counts',
+//             error: error.message
+//         });
+//     }
+// };
+
+// module.exports = { getCounts };
+
+// const Count = require('../models/countModel');
+// const {Cnc, Laser, Printing} = require('../models/peminjamanModel');
+// const { updateExpiredPeminjaman } = require('../controllers/userController');
+
+// const getCounts = async (req, res) => {
+//     try {
+//         console.log('Memulai proses penghitungan...');
+        
+//         await updateExpiredPeminjaman();
+//         console.log('Pembaruan status peminjaman selesai.');
+
+//         // Hitung dokumen untuk setiap status dan setiap tipe mesin
+//         const [
+//             disetujuiCnc, ditolakCnc, menungguCnc,
+//             disetujuiLaser, ditolakLaser, menungguLaser,
+//             disetujuiPrinting, ditolakPrinting, menungguPrinting
+//         ] = await Promise.all([
+//             Cnc.countDocuments({status: 'Disetujui'}),
+//             Cnc.countDocuments({status: 'Ditolak'}),
+//             Cnc.countDocuments({status: 'Menunggu'}),
+//             Laser.countDocuments({status: 'Disetujui'}),
+//             Laser.countDocuments({status: 'Ditolak'}),
+//             Laser.countDocuments({status: 'Menunggu'}),
+//             Printing.countDocuments({status: 'Disetujui'}),
+//             Printing.countDocuments({status: 'Ditolak'}),
+//             Printing.countDocuments({status: 'Menunggu'})
+//         ]);
+
+//         // Update atau buat dokumen Count
+//         const updatedCount = await Count.findOneAndUpdate(
+//             {},
+//             {
+//                 disetujui_cnc: disetujuiCnc,
+//                 ditolak_cnc: ditolakCnc,
+//                 menunggu_cnc: menungguCnc,
+//                 disetujui_laser: disetujuiLaser,
+//                 ditolak_laser: ditolakLaser,
+//                 menunggu_laser: menungguLaser,
+//                 disetujui_printing: disetujuiPrinting,
+//                 ditolak_printing: ditolakPrinting,
+//                 menunggu_printing: menungguPrinting
+//             },
+//             { new: true, upsert: true }
+//         );
+
+//         res.status(200).json({
+//             success: true,
+//             message: 'Counts retrieved and updated successfully',
+//             data: updatedCount
+//         });
+//     } catch (error) {
+//         console.error('Error getting counts:', error);
+//         res.status(500).json({
+//             success: false,
+//             message: 'Error getting counts',
+//             error: error.message
+//         });
+//     }
+// };
+
+// module.exports = { getCounts };
+
 const Count = require('../models/countModel');
 const {Cnc, Laser, Printing} = require('../models/peminjamanModel');
 const { updateExpiredPeminjaman } = require('../controllers/userController');
 
-const getCounts = async (req, res) => {
-    try {
-        console.log('Memulai proses penghitungan...');
-        
-        await updateExpiredPeminjaman();
-        console.log('Pembaruan status peminjaman selesai.');
 
-        // Hitung dokumen untuk setiap status dan setiap tipe mesin
+async function getAndUpdateCounts() {
+    console.log('Memulai proses penghitungan dan pembaruan...');
+    
+    try {
+        await updateExpiredPeminjaman();
+        
         const [
             disetujuiCnc, ditolakCnc, menungguCnc,
             disetujuiLaser, ditolakLaser, menungguLaser,
@@ -148,43 +389,89 @@ const getCounts = async (req, res) => {
             Printing.countDocuments({status: 'Menunggu'})
         ]);
 
-        console.log('Penghitungan selesai.');
-
-        const countData = {
-            disetujui_cnc: disetujuiCnc,
-            ditolak_cnc: ditolakCnc,
-            menunggu_cnc: menungguCnc,
-            disetujui_laser: disetujuiLaser,
-            ditolak_laser: ditolakLaser,
-            menunggu_laser: menungguLaser,
-            disetujui_printing: disetujuiPrinting,
-            ditolak_printing: ditolakPrinting,
-            menunggu_printing: menungguPrinting,
-            waktu: new Date(),
-        };
-
-        // Find the first document and update it, or create it if it doesn't exist
         const updatedCount = await Count.findOneAndUpdate(
             {},
-            countData,
+            {
+                disetujui_cnc: disetujuiCnc,
+                ditolak_cnc: ditolakCnc,
+                menunggu_cnc: menungguCnc,
+                disetujui_laser: disetujuiLaser,
+                ditolak_laser: ditolakLaser,
+                menunggu_laser: menungguLaser,
+                disetujui_printing: disetujuiPrinting,
+                ditolak_printing: ditolakPrinting,
+                menunggu_printing: menungguPrinting
+            },
             { new: true, upsert: true }
         );
 
-        console.log('Data count berhasil diperbarui.');
-
-        res.status(200).json({
-            success: true,
-            status: res.statusCode,
-            message: 'Counts retrieved and updated successfully',
-            data: updatedCount,
-        });
+        console.log('Counts diperbarui:', updatedCount);
+        return updatedCount;
     } catch (error) {
-        console.error('Error getting counts:', error);
-        res.status(500).json({
-            success: false,
-            message: 'Error getting counts',
-        });
+        console.error('Error dalam getAndUpdateCounts:', error);
+        throw error;
     }
-};
+}
 
-module.exports = { getCounts };
+module.exports = { getAndUpdateCounts };
+
+// const getCounts = async (req, res) => {
+//     try {
+//         console.log('Memulai proses penghitungan dan pembaruan...');
+        
+//         // Update expired peminjaman
+//         await updateExpiredPeminjaman();
+//         console.log('Pembaruan status peminjaman selesai.');
+
+//         // Hitung dokumen untuk setiap status dan setiap tipe mesin
+//         const [
+//             disetujuiCnc, ditolakCnc, menungguCnc,
+//             disetujuiLaser, ditolakLaser, menungguLaser,
+//             disetujuiPrinting, ditolakPrinting, menungguPrinting
+//         ] = await Promise.all([
+//             Cnc.countDocuments({status: 'Disetujui'}),
+//             Cnc.countDocuments({status: 'Ditolak'}),
+//             Cnc.countDocuments({status: 'Menunggu'}),
+//             Laser.countDocuments({status: 'Disetujui'}),
+//             Laser.countDocuments({status: 'Ditolak'}),
+//             Laser.countDocuments({status: 'Menunggu'}),
+//             Printing.countDocuments({status: 'Disetujui'}),
+//             Printing.countDocuments({status: 'Ditolak'}),
+//             Printing.countDocuments({status: 'Menunggu'})
+//         ]);
+
+//         // Update atau buat dokumen Count
+//         const updatedCount = await Count.findOneAndUpdate(
+//             {},
+//             {
+//                 disetujui_cnc: disetujuiCnc,
+//                 ditolak_cnc: ditolakCnc,
+//                 menunggu_cnc: menungguCnc,
+//                 disetujui_laser: disetujuiLaser,
+//                 ditolak_laser: ditolakLaser,
+//                 menunggu_laser: menungguLaser,
+//                 disetujui_printing: disetujuiPrinting,
+//                 ditolak_printing: ditolakPrinting,
+//                 menunggu_printing: menungguPrinting
+//             },
+//             { new: true, upsert: true }
+//         );
+
+//         console.log('Counts diperbarui dan diambil.');
+
+//         res.status(200).json({
+//             success: true,
+//             message: 'Counts retrieved and updated successfully',
+//             data: updatedCount
+//         });
+//     } catch (error) {
+//         console.error('Error getting and updating counts:', error);
+//         res.status(500).json({
+//             success: false,
+//             message: 'Error getting and updating counts',
+//             error: error.message
+//         });
+//     }
+// };
+
+// module.exports = { getCounts };
