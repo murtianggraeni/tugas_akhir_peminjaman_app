@@ -24,6 +24,7 @@ const userSchema = new mongoose.Schema({
     },
     refresh_token: {
         type: String,
+        default: null,
     },
     peminjamanCnc: [{ type: Schema.Types.ObjectId, ref: 'Cnc' }]
 });

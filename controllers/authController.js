@@ -155,4 +155,41 @@ const login = async (req, res) => {
     
 }
 
-module.exports = {register, login};
+const logout = async (req, res) => {
+    try {
+      const userEmail = req.email;
+      console.log(`Attempting to logout user: ${userEmail}`);
+  
+      const user = await User.findOne({ email: userEmail });
+  
+      if (!user) {
+        console.log(`User not found for email: ${userEmail}`);
+        return res.status(200).json({
+          success: true,
+          message: "User already logged out"
+        });
+      }
+  
+      console.log(`User found, clearing refresh token for: ${userEmail}`);
+      user.refresh_token = null;
+      await user.save();
+  
+      console.log('Clearing refresh token cookie');
+      res.clearCookie('refreshToken');
+  
+      console.log('Logout successful');
+      res.status(200).json({
+        success: true,
+        message: "Logged out successfully"
+      });
+    } catch (error) {
+      console.error('Logout error:', error);
+      res.status(500).json({
+        success: false,
+        message: "An error occurred during logout"
+      });
+    }
+  };
+  
+
+module.exports = {register, login, logout};

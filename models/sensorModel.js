@@ -6,6 +6,9 @@ const sensorSchema = new mongoose.Schema ({
     button : {
         type : Boolean
     },
+    current : {
+        type : Number
+    },
     waktu : {
         type : Date,
         default : Date.now

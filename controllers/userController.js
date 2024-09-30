@@ -549,7 +549,7 @@ const updateExpiredPeminjaman = async () => {
             }
         }
         
-        console.log(`${totalUpdated} peminjaman diperbarui karena kadaluarsa.`);
+        console.log(`${totalUpdated} peminjaman diperbarui karena kedaluwarsa.`);
         return totalUpdated > 0; // Return true if any peminjaman was updated
     } catch (error) {
         console.error('Error dalam updateExpiredPeminjaman:', error);

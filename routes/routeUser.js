@@ -1,7 +1,7 @@
 const express = require('express');
 const { upload, peminjamanHandler, getPeminjamanAllHandler, getPeminjamanByIdHandler, extendPeminjamanHandler, checkPeminjamanStatus } = require('../controllers/userController');
 const { getApprovedPeminjaman, getApprovedPeminjamanByDate } = require('../controllers/approvedPeminjamanController');
-const { getCounts, getAndUpdateCounts } = require('../controllers/countController');
+const { getAndUpdateCounts } = require('../controllers/countController');
 const authenticate = require('../middleware/verifyToken');
 
 

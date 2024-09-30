@@ -30,27 +30,30 @@ const port = process.env.PORT ||3000
 app.listen(port, async () => {
     console.log(`Server berjalan di port ${port}`);
     try {
+        // Perbarui data expired peminjaman dan count saat startup
         await updateExpiredPeminjaman();
         await getAndUpdateCounts();
         console.log('Initial update of expired peminjaman and counts completed');
+        
+        // Schedule task to update peminjaman and counts every 5 minutes
         scheduleUpdateExpiredPeminjaman();
     } catch (error) {
         console.error('Error during startup:', error);
     }
 });
 
+// Fungsi untuk menjalankan pembaruan secara berkala setiap 5 menit
 const scheduleUpdateExpiredPeminjaman = () => {
     cron.schedule('*/5 * * * *', async () => {
-        console.log('Menjalankan pemeriksaan peminjaman kadaluarsa...');
+        console.log('Menjalankan pemeriksaan peminjaman kedaluwarsa...');
         try {
             await updateExpiredPeminjaman();
             await getAndUpdateCounts();
-            console.log('Pemeriksaan peminjaman kadaluarsa dan update counts selesai');
+            console.log('Pemeriksaan peminjaman kedaluwarsa dan update counts selesai');
         } catch (error) {
             console.error('Error during scheduled update:', error);
         }
     });
-
 };
 
 // app.listen(port, async () => {

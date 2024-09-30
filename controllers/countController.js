@@ -367,30 +367,35 @@ const {Cnc, Laser, Printing} = require('../models/peminjamanModel');
 const { updateExpiredPeminjaman } = require('../controllers/userController');
 
 
-async function getAndUpdateCounts() {
+// Fungsi untuk mendapatkan dan memperbarui hitungan peminjaman
+async function getAndUpdateCounts(req, res) {
     console.log('Memulai proses penghitungan dan pembaruan...');
-    
+
     try {
-        await updateExpiredPeminjaman();
-        
+        // Perbarui peminjaman yang kadaluarsa
+        const updatedExpired = await updateExpiredPeminjaman();
+        console.log(`Update expired peminjaman: ${updatedExpired ? 'Berhasil' : 'Tidak ada peminjaman yang kadaluarsa'}`);
+
+        // Hitung jumlah peminjaman dari berbagai status dan jenis mesin
         const [
             disetujuiCnc, ditolakCnc, menungguCnc,
             disetujuiLaser, ditolakLaser, menungguLaser,
             disetujuiPrinting, ditolakPrinting, menungguPrinting
         ] = await Promise.all([
-            Cnc.countDocuments({status: 'Disetujui'}),
-            Cnc.countDocuments({status: 'Ditolak'}),
-            Cnc.countDocuments({status: 'Menunggu'}),
-            Laser.countDocuments({status: 'Disetujui'}),
-            Laser.countDocuments({status: 'Ditolak'}),
-            Laser.countDocuments({status: 'Menunggu'}),
-            Printing.countDocuments({status: 'Disetujui'}),
-            Printing.countDocuments({status: 'Ditolak'}),
-            Printing.countDocuments({status: 'Menunggu'})
+            Cnc.countDocuments({ status: 'Disetujui' }),
+            Cnc.countDocuments({ status: 'Ditolak' }),
+            Cnc.countDocuments({ status: 'Menunggu' }),
+            Laser.countDocuments({ status: 'Disetujui' }),
+            Laser.countDocuments({ status: 'Ditolak' }),
+            Laser.countDocuments({ status: 'Menunggu' }),
+            Printing.countDocuments({ status: 'Disetujui' }),
+            Printing.countDocuments({ status: 'Ditolak' }),
+            Printing.countDocuments({ status: 'Menunggu' })
         ]);
 
+        // Perbarui atau buat entri baru di koleksi Count
         const updatedCount = await Count.findOneAndUpdate(
-            {},
+            {}, // Query untuk menemukan dokumen pertama
             {
                 disetujui_cnc: disetujuiCnc,
                 ditolak_cnc: ditolakCnc,
@@ -402,16 +407,36 @@ async function getAndUpdateCounts() {
                 ditolak_printing: ditolakPrinting,
                 menunggu_printing: menungguPrinting
             },
-            { new: true, upsert: true }
+            { new: true, upsert: true } // Buat dokumen baru jika tidak ada yang ditemukan
         );
 
         console.log('Counts diperbarui:', updatedCount);
-        return updatedCount;
+
+        const responseData = {
+            success: true,
+            message: 'Data count berhasil diperbarui',
+            data: updatedCount.toObject()  // Pastikan ini adalah plain object
+        };
+        
+        console.log('Sending response:', JSON.stringify(responseData));  // Log response yang dikirim
+        
+        return res ? res.status(200).json(responseData) : responseData;
     } catch (error) {
         console.error('Error dalam getAndUpdateCounts:', error);
-        throw error;
+        const errorResponse = {
+            success: false,
+            message: 'Server Error',
+            error: error.message,
+            data: null 
+        };
+        console.log('Sending error response:', JSON.stringify(errorResponse));  // Log error response
+        if (res) {
+            return res.status(500).json(errorResponse);
+        }
+        return errorResponse;
     }
 }
+
 
 module.exports = { getAndUpdateCounts };
 
