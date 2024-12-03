@@ -1,0 +1,800 @@
+[23/11/2024, 11.21.13,895] ERROR: (node:7216) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.21.17,766] ERROR: (node:29980) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.21.41,373] ERROR: (node:21512) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.21.46,308] ERROR: (node:26712) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.21.57,964] ERROR: (node:23328) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.22.03,154] ERROR: (node:22840) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.22.15,218] ERROR: (node:31272) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.22.23,816] ERROR: (node:35096) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.22.26,282] ERROR: (node:41544) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.22.34,371] ERROR: (node:26504) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.23.44,451] ERROR: (node:27580) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.23.53,045] ERROR: (node:17968) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.23.58,624] ERROR: (node:1904) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.24.45,556] ERROR: (node:42312) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.24.54,619] ERROR: (node:37952) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.25.11,671] ERROR: (node:42976) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.25.17,886] ERROR: (node:5828) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.25.30,017] ERROR: (node:42676) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.25.39,865] ERROR: (node:35740) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.25.46,202] ERROR: (node:34096) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.25.51,449] ERROR: (node:34512) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.26.57,482] ERROR: (node:32980) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.27.13,086] ERROR: (node:33196) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.27.22,418] ERROR: (node:40264) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.27.38,464] ERROR: (node:28536) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.27.44,378] ERROR: (node:25012) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.28.22,203] ERROR: (node:40148) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.28.43,686] ERROR: (node:16752) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.33.06,098] ERROR: (node:26052) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.46.48,013] ERROR: (node:40208) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.46.50,910] ERROR: (node:38524) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.46.56,288] ERROR: (node:35888) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.52.04,827] ERROR: (node:25324) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.58.06,520] ERROR: (node:15664) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 11.58.24,052] ERROR: (node:35248) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 14.45.42,829] ERROR: SyntaxError: Expected ',' or '}' after property value in JSON at position 23 (line 3 column 3)
+    at JSON.parse (<anonymous>)
+    at parse (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\raw-body\index.js:238:16)
+    at done (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[23/11/2024, 14.47.13,381] ERROR: (node:39104) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 14.47.40,543] ERROR: SyntaxError: Expected ',' or '}' after property value in JSON at position 23 (line 3 column 3)
+    at JSON.parse (<anonymous>)
+    at parse (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\raw-body\index.js:238:16)
+    at done (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[23/11/2024, 14.48.45,792] ERROR: (node:20960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 14.48.50,702] ERROR: (node:26044) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 14.49.13,700] ERROR: (node:33844) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 14.54.48,488] ERROR: (node:37960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 14.54.52,291] ERROR: (node:36624) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 15.12.38,127] ERROR: (node:36752) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 15.12.40,135] ERROR: Gagal terkoneksi ke MongoDb queryTxt ESERVFAIL cluster0.dx6yltg.mongodb.net
+[23/11/2024, 15.13.10,471] ERROR: (node:33372) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 15.13.27,003] ERROR: (node:38844) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 15.13.50,090] ERROR: (node:40752) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 15.14.01,404] ERROR: (node:14120) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 15.14.49,896] ERROR: (node:2080) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 15.21.46,603] ERROR: (node:26984) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 15.21.49,930] ERROR: (node:908) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 15.22.46,490] ERROR: (node:5028) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 16.07.10,419] ERROR: Error menyalakan buzzer: AxiosError: Request failed with status code 404
+[23/11/2024, 16.07.10,421] ERROR: Error menyalakan buzzer untuk peminjaman 674199f4a1026e5d7c7c3698: Request failed with status code 404
+[23/11/2024, 16.07.40,381] ERROR: Error menyalakan buzzer: AxiosError: Request failed with status code 404
+[23/11/2024, 16.07.40,383] ERROR: Error menyalakan buzzer untuk peminjaman 674199f4a1026e5d7c7c3698: Request failed with status code 404
+[23/11/2024, 16.08.10,446] ERROR: Error menyalakan buzzer: AxiosError: Request failed with status code 404
+[23/11/2024, 16.08.10,446] ERROR: Error menyalakan buzzer untuk peminjaman 674199f4a1026e5d7c7c3698: Request failed with status code 404
+[23/11/2024, 16.08.40,579] ERROR: Error menyalakan buzzer: AxiosError: Request failed with status code 404
+[23/11/2024, 16.08.40,581] ERROR: Error menyalakan buzzer untuk peminjaman 674199f4a1026e5d7c7c3698: Request failed with status code 404
+[23/11/2024, 16.09.10,460] ERROR: Error menyalakan buzzer: AxiosError: Request failed with status code 404
+[23/11/2024, 16.09.10,461] ERROR: Error menyalakan buzzer untuk peminjaman 674199f4a1026e5d7c7c3698: Request failed with status code 404
+[23/11/2024, 16.09.40,469] ERROR: Error menyalakan buzzer: AxiosError: Request failed with status code 404
+[23/11/2024, 16.09.40,469] ERROR: Error menyalakan buzzer untuk peminjaman 674199f4a1026e5d7c7c3698: Request failed with status code 404
+[23/11/2024, 16.10.10,495] ERROR: Error menyalakan buzzer: AxiosError: Request failed with status code 404
+[23/11/2024, 16.10.10,497] ERROR: Error menyalakan buzzer untuk peminjaman 674199f4a1026e5d7c7c3698: Request failed with status code 404
+[23/11/2024, 16.10.40,397] ERROR: Error menyalakan buzzer: AxiosError: Request failed with status code 404
+[23/11/2024, 16.10.40,399] ERROR: Error menyalakan buzzer untuk peminjaman 674199f4a1026e5d7c7c3698: Request failed with status code 404
+[23/11/2024, 16.11.10,445] ERROR: Error menyalakan buzzer: AxiosError: Request failed with status code 404
+[23/11/2024, 16.11.10,446] ERROR: Error menyalakan buzzer untuk peminjaman 674199f4a1026e5d7c7c3698: Request failed with status code 404
+[23/11/2024, 16.11.40,677] ERROR: Error menyalakan buzzer: AxiosError: Request failed with status code 404
+[23/11/2024, 16.11.40,678] ERROR: Error menyalakan buzzer untuk peminjaman 674199f4a1026e5d7c7c3698: Request failed with status code 404
+[23/11/2024, 16.12.37,618] ERROR: (node:37800) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 16.12.49,489] ERROR: (node:17040) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 23.37.05,554] ERROR: (node:40236) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 23.39.16,441] ERROR: (node:31272) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 23.44.22,519] ERROR: (node:31676) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 23.44.25,467] ERROR: (node:26236) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[23/11/2024, 23.56.59,247] ERROR: SyntaxError: Unexpected token ',', ..."ton" : tru,
+  "buzze"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parse (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\body-parser\lib\types\json.js:92:19)
+    at D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\raw-body\index.js:238:16)
+    at done (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\Murti\TEKNIS_TA\be-peminjaman-mesin-main\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[24/11/2024, 09.24.57,708] ERROR: (node:44440) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 09.25.43,502] ERROR: (node:46676) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 12.34.05,181] ERROR: Error: read ECONNRESET
+[24/11/2024, 16.53.22,539] ERROR: (node:28136) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 16.59.35,049] ERROR: Error dalam getAndUpdateCounts: Error: read ECONNRESET
+[24/11/2024, 17.05.46,754] ERROR: Error dalam getAndUpdateCounts: Error: read ECONNRESET
+[24/11/2024, 17.07.40,645] ERROR: Error in getApprovedPeminjaman: Error: read ECONNRESET
+[24/11/2024, 17.11.04,907] ERROR: Error dalam getAndUpdateCounts: Error: read ECONNRESET
+[24/11/2024, 17.14.32,710] ERROR: Error in getPeminjamanAllHandler: Error: read ECONNRESET
+[24/11/2024, 17.20.39,197] ERROR: Error in getPeminjamanAllHandler: Error: read ECONNRESET
+[24/11/2024, 17.58.56,726] ERROR: (node:15924) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 17.58.58,985] ERROR: (node:27576) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 17.59.02,276] ERROR: (node:30460) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 17.59.09,084] ERROR: (node:6744) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 17.59.13,403] ERROR: (node:28772) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 17.59.16,404] ERROR: (node:19392) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 19.45.35,697] ERROR: (node:30240) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 19.45.39,774] ERROR: (node:1556) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 19.45.48,330] ERROR: (node:3100) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 19.45.51,152] ERROR: (node:29280) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 19.45.55,165] ERROR: (node:30716) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 19.46.19,517] ERROR: (node:1792) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 19.46.29,299] ERROR: (node:7872) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[24/11/2024, 23.03.22,836] ERROR: (node:12740) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 02.34.02,922] ERROR: Error saving peminjaman: Error: write ECONNABORTED
+[25/11/2024, 09.28.28,010] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[25/11/2024, 10.33.58,926] ERROR: (node:30928) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 10.36.19,426] ERROR: (node:15188) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 10.39.14,682] ERROR: (node:8476) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 10.41.58,128] ERROR: (node:38728) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 10.44.04,672] ERROR: (node:22716) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 10.49.50,121] ERROR: (node:32872) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.36.36,979] ERROR: (node:23200) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.36.45,081] ERROR: (node:40880) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.36.54,082] ERROR: (node:5056) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.37.01,506] ERROR: (node:40588) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.37.13,114] ERROR: (node:33816) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.38.08,385] ERROR: (node:3648) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.38.10,977] ERROR: (node:30256) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.38.29,590] ERROR: (node:23840) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.38.32,278] ERROR: (node:31504) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.38.42,093] ERROR: (node:15164) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.38.57,551] ERROR: (node:27896) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 11.39.03,231] ERROR: (node:32424) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 14.17.12,182] ERROR: (node:30048) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 14.17.27,052] ERROR: (node:18928) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.18.47,441] ERROR: (node:38296) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.24.17,435] ERROR: (node:22588) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.24.30,399] ERROR: (node:40776) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.25.03,383] ERROR: (node:7396) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.27.04,551] ERROR: (node:10872) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.27.30,015] ERROR: (node:31328) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.27.40,245] ERROR: (node:38160) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.27.46,551] ERROR: (node:38824) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.27.52,965] ERROR: (node:39784) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.28.44,819] ERROR: (node:27116) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.29.18,207] ERROR: (node:32492) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.29.36,380] ERROR: (node:38740) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.32.38,892] ERROR: (node:5848) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.33.21,011] ERROR: (node:36380) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.33.45,159] ERROR: (node:28288) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.34.05,060] ERROR: (node:1588) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.46.16,705] ERROR: (node:15120) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.50.18,028] ERROR: (node:29060) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 15.50.48,386] ERROR: (node:36640) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 18.35.17,660] ERROR: (node:5080) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 18.35.35,360] ERROR: (node:30556) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 18.46.22,506] ERROR: (node:39076) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/11/2024, 18.47.37,441] ERROR: (node:38616) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[26/11/2024, 12.49.06,137] ERROR: Error processing Cnc: Error: write ECONNRESET
+[26/11/2024, 13.57.18,834] ERROR: Error processing Cnc: Error: write ECONNABORTED
+[26/11/2024, 13.57.18,862] ERROR: Error processing Laser: Error: write ECONNABORTED
+[26/11/2024, 13.57.18,870] ERROR: Error processing Printing: Error: write ECONNABORTED
+[26/11/2024, 14.46.26,266] ERROR: Error in getPeminjamanAllHandler: Error: read ECONNRESET
+[26/11/2024, 14.48.48,957] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.49.18,970] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.49.48,988] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.50.30,311] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.51.00,319] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.51.30,323] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.51.48,969] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.52.00,336] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.52.18,982] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.52.30,346] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.52.48,986] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.53.00,382] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.53.30,422] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.54.48,979] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.55.18,980] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.55.30,454] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.55.48,987] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.56.00,472] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.56.30,483] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.57.00,487] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.57.30,497] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.57.48,995] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.58.00,503] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.58.19,002] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.58.30,510] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 14.58.49,014] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.00.30,611] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.00.49,000] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.01.00,627] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.01.19,003] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.01.30,631] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.01.49,016] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.02.00,637] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.02.30,651] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.03.00,666] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.03.30,678] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.03.49,008] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.04.19,023] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.04.49,032] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.05.30,576] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.06.00,580] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.06.30,599] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.06.49,016] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.07.00,605] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.07.19,032] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.07.30,612] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.07.49,045] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.08.00,619] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.08.30,629] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.09.49,015] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.10.19,024] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.10.30,509] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.10.49,038] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.11.00,518] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.11.30,522] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.12.00,568] ERROR: Error processing Cnc: MongoServerSelectionError: read ECONNRESET
+[26/11/2024, 15.12.30,581] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.12.49,022] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.13.00,586] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.13.19,032] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.13.30,601] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.13.49,043] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.15.30,466] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.15.49,018] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.16.00,478] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.16.19,033] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.16.30,486] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.16.49,047] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.17.00,501] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.17.30,517] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.18.00,532] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.18.30,550] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.18.49,034] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.19.19,049] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.19.49,056] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.20.30,419] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.21.00,423] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.21.30,425] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.21.49,030] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.22.00,434] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.22.19,040] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.22.30,445] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.22.49,053] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.23.00,460] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.23.30,468] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.24.49,038] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.25.19,054] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.25.30,496] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.25.49,062] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.26.00,500] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.26.30,503] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.27.00,517] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.27.30,523] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.27.49,064] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.28.00,528] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.28.19,079] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.28.30,546] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.28.49,087] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.30.30,597] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.30.49,069] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.31.00,615] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.31.19,080] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.31.30,623] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.31.49,094] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.32.00,637] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.32.30,647] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.33.00,661] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.33.30,681] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.33.49,078] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.34.19,094] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.34.49,108] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.35.30,544] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.36.00,555] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.36.30,567] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.37.50,968] ERROR: Error processing Cnc: MongoNetworkTimeoutError: connection timed out
+[26/11/2024, 15.37.51,263] ERROR: Error processing Cnc: MongoNetworkTimeoutError: connection timed out
+[26/11/2024, 15.38.20,974] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.38.21,272] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[26/11/2024, 15.45.11,028] ERROR: Error dalam getAndUpdateCounts: Error: read ECONNRESET
+[26/11/2024, 15.50.10,579] ERROR: Error dalam getAndUpdateCounts: Error: read ECONNRESET
+[26/11/2024, 21.21.26,066] ERROR: (node:6396) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[27/11/2024, 10.59.58,195] ERROR: Error processing Cnc: Error: write ECONNABORTED
+[27/11/2024, 10.59.58,303] ERROR: Error processing Laser: Error: write ECONNABORTED
+[27/11/2024, 10.59.58,375] ERROR: Error processing Printing: Error: write ECONNABORTED
+[28/11/2024, 09.51.57,104] ERROR: Error processing Cnc: Error: write ECONNABORTED
+[28/11/2024, 12.55.10,879] ERROR: Error processing Cnc: Error: read ECONNRESET
+[28/11/2024, 12.55.10,881] ERROR: Error processing Laser: Error: write ECONNRESET
+[28/11/2024, 12.55.10,884] ERROR: Error processing Printing: Error: write ECONNRESET
+[28/11/2024, 12.55.10,888] ERROR: Error processing Cnc: Error: write ECONNRESET
+[28/11/2024, 12.55.10,891] ERROR: Error processing Laser: Error: write ECONNRESET
+[28/11/2024, 12.55.10,893] ERROR: Error processing Printing: Error: write ECONNRESET
+[28/11/2024, 12.55.15,099] ERROR: Error processing Cnc: Error: read ECONNRESET
+[28/11/2024, 12.55.40,914] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 12.55.45,103] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 12.56.15,110] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.54.01,297] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.54.31,308] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.55.01,319] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.55.30,708] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.56.00,719] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.56.30,731] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.57.00,743] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.57.01,307] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.57.30,745] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.57.31,317] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.58.00,754] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.58.01,331] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 15.58.30,759] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.00.01,301] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.00.30,403] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.00.31,311] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.01.00,405] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.01.01,326] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.01.30,420] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.02.00,437] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.02.30,453] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.03.00,465] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.03.01,325] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.03.30,477] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.03.31,334] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.04.01,353] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.05.30,911] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.06.00,924] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.06.01,321] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.06.30,939] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.06.31,328] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.07.00,944] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.07.01,332] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.07.30,956] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.08.00,960] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.08.30,970] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.09.01,344] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.09.31,357] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.10.01,375] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.10.30,296] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.11.00,301] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.11.30,319] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.12.00,377] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.12.01,346] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.12.30,390] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.12.31,357] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.13.00,407] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.13.01,366] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.13.30,412] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.15.01,363] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.15.30,856] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.15.31,370] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.16.00,868] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.16.01,373] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.16.30,878] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.17.00,887] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.17.30,899] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.18.00,902] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.18.01,354] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.18.30,920] ERROR: Error dalam getAndUpdateCounts: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.18.31,359] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[28/11/2024, 16.19.01,366] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[29/11/2024, 18.19.50,006] ERROR: Error processing Cnc: Error: write ECONNRESET
+[30/11/2024, 10.33.44,165] ERROR: Error processing Cnc: MongoServerSelectionError: read ECONNRESET
+[30/11/2024, 14.43.16,765] ERROR: (node:17812) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 15.39.14,287] ERROR: (node:25748) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 15.39.55,715] ERROR: (node:43808) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 15.40.13,734] ERROR: (node:40700) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 15.47.43,818] ERROR: (node:15308) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 15.48.23,460] ERROR: (node:31408) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 15.48.33,733] ERROR: (node:42660) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 15.48.40,447] ERROR: (node:5396) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 15.49.13,762] ERROR: (node:23244) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 15.49.16,218] ERROR: (node:2324) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 15.50.54,675] ERROR: (node:14348) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 16.13.42,503] ERROR: (node:5320) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 17.48.56,876] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,878] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,880] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,881] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,884] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,887] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,889] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,890] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,891] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,893] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,898] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 17.48.56,900] ERROR: Error getting machine status: Error: read ECONNRESET
+[30/11/2024, 18.57.54,045] ERROR: (node:30336) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 19.35.27,908] ERROR: (node:30348) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.03.44,388] ERROR: (node:22580) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.04.33,339] ERROR: (node:45564) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.04.41,950] ERROR: (node:31668) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.14.00,262] ERROR: (node:34300) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.15.19,121] ERROR: (node:4288) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.20.27,531] ERROR: (node:24816) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.23.31,342] ERROR: (node:46432) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.23.34,038] ERROR: [2024-11-30T13:23:34.038Z] Error: ReferenceError: formatDuration is not defined
+[30/11/2024, 20.23.37,817] ERROR: [2024-11-30T13:23:37.817Z] Error: ReferenceError: formatDuration is not defined
+[30/11/2024, 20.25.46,917] ERROR: (node:20148) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.26.38,562] ERROR: (node:21008) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.27.01,003] ERROR: (node:34536) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.30.09,490] ERROR: (node:5756) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.31.05,572] ERROR: (node:5224) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.31.27,467] ERROR: (node:1352) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.32.21,161] ERROR: (node:4892) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.32.38,298] ERROR: (node:46888) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.33.49,144] ERROR: (node:5576) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.33.57,823] ERROR: (node:19660) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.34.13,913] ERROR: (node:27844) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.34.41,250] ERROR: (node:23376) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 20.59.19,202] ERROR: (node:17140) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.01.10,817] ERROR: (node:21080) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.01.14,658] ERROR: (node:41796) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.01.17,953] ERROR: (node:27212) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.01.36,423] ERROR: (node:22872) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.01.39,585] ERROR: (node:28424) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.02.24,301] ERROR: (node:39948) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.02.37,084] ERROR: (node:32416) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.02.40,910] ERROR: (node:12812) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.08.16,559] ERROR: (node:9404) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.08.24,032] ERROR: (node:36360) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.08.40,554] ERROR: (node:23988) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.09.24,087] ERROR: (node:20900) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.10.25,190] ERROR: (node:41300) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.13.52,032] ERROR: (node:25152) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.25.21,145] ERROR: (node:46160) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.25.27,380] ERROR: (node:34220) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.25.31,317] ERROR: (node:46944) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.25.33,944] ERROR: (node:38608) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.31.02,513] ERROR: (node:12800) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.33.09,825] ERROR: (node:3416) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 21.33.31,007] ERROR: (node:10460) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 23.06.51,538] ERROR: (node:1364) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[30/11/2024, 23.34.51,450] ERROR: (node:21732) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[01/12/2024, 08.01.05,083] ERROR: Error processing Cnc: MongoNetworkError: read ECONNRESET
+[01/12/2024, 18.21.07,559] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-01.dx6yltg.mongodb.net
+[01/12/2024, 20.30.15,204] ERROR: Error processing Cnc: Error: write ECONNABORTED
+[01/12/2024, 20.30.15,268] ERROR: Error processing Laser: Error: write ECONNABORTED
+[01/12/2024, 20.30.15,399] ERROR: Error processing Printing: Error: write ECONNABORTED
+[02/12/2024, 00.10.40,695] ERROR: (node:14916) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.11.10,105] ERROR: (node:38744) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.11.14,244] ERROR: (node:1460) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.13.04,722] ERROR: (node:39388) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.13.53,580] ERROR: (node:24164) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.16.21,891] ERROR: (node:33944) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.16.26,944] ERROR: [2024-12-01T17:16:26.944Z] Error: ReferenceError: now is not defined
+[02/12/2024, 00.16.26,999] ERROR: [2024-12-01T17:16:26.999Z] Error: ReferenceError: now is not defined
+[02/12/2024, 00.16.27,071] ERROR: [2024-12-01T17:16:27.071Z] Error: ReferenceError: now is not defined
+[02/12/2024, 00.16.43,020] ERROR: (node:14952) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.17.26,208] ERROR: (node:40816) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.17.45,837] ERROR: (node:13500) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.18.10,078] ERROR: (node:40236) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.18.22,228] ERROR: (node:33864) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.18.38,278] ERROR: (node:2964) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.19.42,315] ERROR: (node:40300) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.19.57,017] ERROR: (node:17012) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.20.10,821] ERROR: (node:12976) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.20.17,397] ERROR: (node:31952) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.21.39,481] ERROR: (node:29200) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.21.45,268] ERROR: (node:38740) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.22.56,870] ERROR: (node:32244) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.24.44,374] ERROR: (node:37640) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.25.12,248] ERROR: (node:26888) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.25.15,166] ERROR: [2024-12-01T17:25:15.166Z] Error: ReferenceError: targetDate is not defined
+[02/12/2024, 00.25.26,753] ERROR: [2024-12-01T17:25:26.753Z] Error: ReferenceError: targetDate is not defined
+[02/12/2024, 00.25.26,793] ERROR: [2024-12-01T17:25:26.793Z] Error: ReferenceError: targetDate is not defined
+[02/12/2024, 00.25.26,795] ERROR: [2024-12-01T17:25:26.795Z] Error: ReferenceError: targetDate is not defined
+[02/12/2024, 00.25.40,623] ERROR: (node:22120) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.25.45,245] ERROR: (node:31372) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.25.56,264] ERROR: (node:23332) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.26.08,037] ERROR: (node:37628) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.28.38,876] ERROR: (node:21604) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.28.53,787] ERROR: (node:22584) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.29.37,272] ERROR: (node:36480) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.29.58,897] ERROR: (node:7396) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.32.14,840] ERROR: (node:25492) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.32.27,459] ERROR: (node:9584) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.36.09,105] ERROR: (node:10668) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.37.20,387] ERROR: (node:2336) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.38.56,180] ERROR: (node:27608) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.40.49,729] ERROR: (node:17932) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.42.13,069] ERROR: (node:22468) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.42.37,085] ERROR: (node:20304) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.44.15,725] ERROR: (node:29180) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 00.46.39,098] ERROR: (node:29100) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 09.00.10,693] ERROR: Error dalam getAndUpdateCounts: Error: read ECONNRESET
+[02/12/2024, 10.01.21,931] ERROR: (node:33992) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.01.32,165] ERROR: (node:25620) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.01.36,577] ERROR: (node:6808) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.01.42,777] ERROR: (node:21740) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.06.03,190] ERROR: (node:21604) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.10.12,513] ERROR: (node:34408) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.39.50,219] ERROR: (node:31016) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.40.03,796] ERROR: (node:7280) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.40.22,105] ERROR: (node:39512) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.41.31,431] ERROR: (node:32272) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.41.37,609] ERROR: (node:18428) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.41.48,509] ERROR: (node:25020) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.41.55,044] ERROR: (node:25156) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.42.12,417] ERROR: (node:37160) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.42.15,804] ERROR: (node:25620) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.42.18,535] ERROR: (node:37460) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 10.42.29,395] ERROR: (node:33948) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[02/12/2024, 11.48.48,582] ERROR: Error processing Cnc: Error: read ECONNRESET
+[03/12/2024, 07.23.23,059] ERROR: (node:19216) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.11.13,662] ERROR: (node:19196) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.11.24,815] ERROR: (node:8600) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.11.33,007] ERROR: (node:38480) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.11.38,327] ERROR: (node:43416) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.11.41,049] ERROR: (node:23280) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.12.18,773] ERROR: (node:31148) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.12.55,361] ERROR: (node:8608) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.15.56,123] ERROR: (node:45520) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.18.01,923] ERROR: (node:10648) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.20.07,565] ERROR: (node:33464) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.20.57,145] ERROR: (node:25812) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.24.35,555] ERROR: (node:45584) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.27.25,163] ERROR: (node:25888) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 17.00.00,000] ERROR: Error: Database error
+[03/12/2024, 09.28.09,450] ERROR: (node:7400) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.31.39,016] ERROR: (node:42464) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.33.22,317] ERROR: (node:33224) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.35.26,981] ERROR: (node:41296) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.35.36,455] ERROR: (node:43404) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 09.35.41,777] ERROR: (node:29216) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 11.51.46,215] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-02.dx6yltg.mongodb.net
+[03/12/2024, 11.52.16,223] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-02.dx6yltg.mongodb.net
+[03/12/2024, 11.52.46,237] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-02.dx6yltg.mongodb.net
+[03/12/2024, 11.54.46,212] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-02.dx6yltg.mongodb.net

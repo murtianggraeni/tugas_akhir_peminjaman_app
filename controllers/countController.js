@@ -373,8 +373,13 @@ async function getAndUpdateCounts(req, res) {
 
     try {
         // Perbarui peminjaman yang kadaluarsa
-        const updatedExpired = await updateExpiredPeminjaman();
-        console.log(`Update expired peminjaman: ${updatedExpired ? 'Berhasil' : 'Tidak ada peminjaman yang kadaluarsa'}`);
+        try {
+            const updatedExpired = await updateExpiredPeminjaman();
+            console.log(`Update expired peminjaman: ${updatedExpired ? 'Berhasil' : 'Tidak ada peminjaman yang kadaluarsa'}`);
+        } catch (updateError) {
+            console.error('Error saat update expired peminjaman:', updateError);
+            throw updateError; // Re-throw error untuk ditangkap di catch block utama
+        }
 
         // Hitung jumlah peminjaman dari berbagai status dan jenis mesin
         const [
@@ -410,7 +415,7 @@ async function getAndUpdateCounts(req, res) {
             { new: true, upsert: true } // Buat dokumen baru jika tidak ada yang ditemukan
         );
 
-        console.log('Counts diperbarui:', updatedCount);
+        // console.log('Counts diperbarui:', updatedCount);
 
         const responseData = {
             success: true,
@@ -418,7 +423,7 @@ async function getAndUpdateCounts(req, res) {
             data: updatedCount.toObject()  // Pastikan ini adalah plain object
         };
         
-        console.log('Sending response:', JSON.stringify(responseData));  // Log response yang dikirim
+        //console.log('Sending response:', JSON.stringify(responseData));  // Log response yang dikirim
         
         return res ? res.status(200).json(responseData) : responseData;
     } catch (error) {

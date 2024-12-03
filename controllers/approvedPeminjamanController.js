@@ -151,7 +151,7 @@ const getApprovedPeminjaman = async (req, res) => {
             };
         });
 
-        console.log('Sending approved peminjaman:', flattenedPeminjaman);
+        // console.log('Sending approved peminjaman:', flattenedPeminjaman);
 
         res.status(200).json({
             success: true,

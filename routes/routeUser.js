@@ -4,7 +4,6 @@ const { getApprovedPeminjaman, getApprovedPeminjamanByDate } = require('../contr
 const { getAndUpdateCounts } = require('../controllers/countController');
 const authenticate = require('../middleware/verifyToken');
 
-
 const router = express.Router();
 
 // Rute dinamis berdasarkan parameter 'type'
@@ -16,7 +15,7 @@ router.get('/peminjaman/:peminjamanId', authenticate, getPeminjamanByIdHandler);
 router.get('/approved-peminjaman', authenticate, getApprovedPeminjaman);
 router.get('/approved-peminjaman/:date', authenticate, getApprovedPeminjamanByDate);
 
-// Rute untuk perpanjangan peminjaman
+// Rute untuk memperpanjang peminjaman
 router.put('/peminjaman/:peminjamanId/extend', authenticate, extendPeminjamanHandler);
 
 router.get('/check-peminjaman-status', authenticate, checkPeminjamanStatus);
