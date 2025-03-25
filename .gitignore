@@ -1,3 +1,5 @@
 node_modules
 .env
 pushnotification-fe894-firebase-adminsdk-6o36a-b5a82eb18b.json
+test
+logs

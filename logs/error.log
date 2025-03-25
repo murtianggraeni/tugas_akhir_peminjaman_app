@@ -798,3 +798,191 @@
 [03/12/2024, 11.52.16,223] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-02.dx6yltg.mongodb.net
 [03/12/2024, 11.52.46,237] ERROR: Error processing Printing: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-02.dx6yltg.mongodb.net
 [03/12/2024, 11.54.46,212] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-02.dx6yltg.mongodb.net
+[03/12/2024, 16.19.35,429] ERROR: (node:11828) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[03/12/2024, 20.09.46,991] ERROR: Error processing Cnc: Error: write ECONNABORTED
+[04/12/2024, 10.27.08,971] ERROR: Error processing Cnc: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[04/12/2024, 10.27.38,983] ERROR: Error processing Laser: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-ff1boc6-shard-00-00.dx6yltg.mongodb.net
+[04/12/2024, 19.37.55,653] ERROR: (node:35452) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[05/12/2024, 06.58.08,048] ERROR: (node:2920) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[05/12/2024, 08.19.10,348] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.20.10,358] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.21.00,403] ERROR: Failed to turn off relay: DocumentNotFoundError: No document found for query "{ _id: new ObjectId('6750f7e2c3c7b342b55693f2') }" on model "Laser"
+[05/12/2024, 08.21.00,404] ERROR: Failed to turn off relay for rental 6750f7e2c3c7b342b55693f2: No document found for query "{ _id: new ObjectId('6750f7e2c3c7b342b55693f2') }" on model "Laser"
+[05/12/2024, 08.21.10,372] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.22.10,373] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.23.10,396] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.24.10,384] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.25.10,405] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.26.10,416] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.27.10,417] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.28.10,665] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.29.10,433] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.30.10,439] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.31.10,444] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.32.10,451] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.33.10,460] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.34.10,482] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.35.10,495] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.36.10,493] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.37.10,511] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.38.10,522] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.39.10,538] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.40.10,551] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.41.10,558] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.42.10,564] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.43.10,576] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.44.10,566] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.45.10,570] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.46.10,587] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.47.10,585] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.48.10,605] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.49.10,752] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.50.10,611] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.51.10,619] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.52.10,632] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.53.10,644] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.54.10,644] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.55.10,653] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.56.10,653] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.57.10,668] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.58.10,671] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 08.59.10,672] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 09.00.10,755] ERROR: Error in interval check: TypeError: Cannot read properties of null (reading 'akhir_peminjaman')
+[05/12/2024, 09.24.53,074] ERROR: (node:8404) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[05/12/2024, 10.00.08,323] ERROR: Error processing Cnc: Error: read ECONNRESET
+[05/12/2024, 10.00.08,350] ERROR: Error processing Laser: Error: write ECONNRESET
+[05/12/2024, 10.00.08,353] ERROR: Error processing Printing: Error: write ECONNRESET
+[05/12/2024, 10.00.08,358] ERROR: Error processing Cnc: Error: write ECONNRESET
+[05/12/2024, 10.00.08,360] ERROR: Error processing Laser: Error: write ECONNRESET
+[05/12/2024, 10.00.08,363] ERROR: Error processing Printing: Error: write ECONNRESET
+[05/12/2024, 10.00.08,371] ERROR: Error dalam getAndUpdateCounts: Error: write ECONNRESET
+[05/12/2024, 10.00.08,374] ERROR: Error processing Cnc: Error: read ECONNRESET
+[06/12/2024, 08.16.00,567] ERROR: Error processing Cnc: Error: write ECONNRESET
+[06/12/2024, 20.19.55,590] ERROR: Error processing Cnc: Error: read ECONNRESET
+[19/12/2024, 07.34.54,915] ERROR: (node:30824) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[19/12/2024, 15.48.47,266] ERROR: (node:32920) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 05.41.48,853] ERROR: (node:120) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 05.51.14,223] ERROR: (node:10088) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 05.51.43,765] ERROR: (node:28956) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 05.54.24,073] ERROR: (node:25032) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 05.55.10,771] ERROR: Error in checkAvailability: ReferenceError: formatDate is not defined
+[20/12/2024, 05.55.10,773] ERROR: ReferenceError: formatDate is not defined
+[20/12/2024, 05.56.14,586] ERROR: (node:15444) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.00.43,877] ERROR: (node:18056) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.01.01,201] ERROR: (node:21604) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.03.37,984] ERROR: (node:26584) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.03.41,493] ERROR: (node:35460) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.06.37,532] ERROR: Error dalam getAndUpdateCounts: Error: read ECONNRESET
+[20/12/2024, 06.06.56,982] ERROR: (node:37452) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.07.06,289] ERROR: (node:5824) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.07.12,946] ERROR: (node:24620) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.07.28,098] ERROR: (node:36132) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.07.43,579] ERROR: (node:39552) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.07.57,854] ERROR: Error in checkAvailability: ReferenceError: formatDate is not defined
+[20/12/2024, 06.07.57,856] ERROR: ReferenceError: formatDate is not defined
+[20/12/2024, 06.08.44,240] ERROR: (node:16400) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.14.06,048] ERROR: (node:38000) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.20.04,464] ERROR: (node:26672) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.23.47,358] ERROR: (node:19688) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.23.52,434] ERROR: Error in checkAvailability: RangeError: Invalid time value
+[20/12/2024, 06.23.52,435] ERROR: RangeError: Invalid time value
+[20/12/2024, 06.24.08,712] ERROR: (node:26944) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.25.15,212] ERROR: (node:17320) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.27.40,375] ERROR: (node:39624) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.27.54,309] ERROR: (node:36836) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.28.00,031] ERROR: (node:30760) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.28.20,751] ERROR: (node:37976) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.29.00,642] ERROR: (node:5908) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.31.02,483] ERROR: (node:37932) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.31.08,582] ERROR: (node:20596) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.35.43,014] ERROR: (node:39404) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.37.16,945] ERROR: Error in checkAvailability: RangeError: Invalid time value
+[20/12/2024, 06.37.16,985] ERROR: RangeError: Invalid time value
+[20/12/2024, 06.37.25,669] ERROR: (node:30688) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.41.35,128] ERROR: (node:19744) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.42.04,300] ERROR: (node:37252) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.42.07,906] ERROR: (node:32312) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.42.41,828] ERROR: (node:31736) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.44.20,671] ERROR: (node:18828) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.44.23,676] ERROR: (node:18928) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.44.43,743] ERROR: (node:36144) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.46.47,368] ERROR: (node:20800) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.46.49,944] ERROR: (node:31144) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.48.07,914] ERROR: Error in checkAvailability: RangeError: Invalid time value
+[20/12/2024, 06.48.07,914] ERROR: RangeError: Invalid time value
+[20/12/2024, 06.48.30,282] ERROR: (node:5420) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.49.16,428] ERROR: (node:30688) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.51.43,777] ERROR: (node:16664) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.51.46,031] ERROR: (node:38960) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.51.57,767] ERROR: (node:904) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.52.02,120] ERROR: (node:31516) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.52.07,909] ERROR: (node:37740) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.52.15,517] ERROR: (node:4764) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.52.19,763] ERROR: (node:28036) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.54.32,997] ERROR: (node:34156) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.56.29,225] ERROR: (node:9732) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.56.35,024] ERROR: (node:22684) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[20/12/2024, 06.58.25,889] ERROR: (node:24048) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[14/03/2025, 23.35.25,507] ERROR: (node:42892) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[14/03/2025, 23.35.25,607] ERROR: Gagal terkoneksi ke MongoDb querySrv ENOTFOUND _mongodb._tcp.cluster0.dx6yltg.mongodb.net
+[25/03/2025, 13.18.41,346] ERROR: (node:24732) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[25/03/2025, 13.18.41,742] ERROR: Gagal terkoneksi ke MongoDb querySrv ENOTFOUND _mongodb._tcp.cluster0.dx6yltg.mongodb.net

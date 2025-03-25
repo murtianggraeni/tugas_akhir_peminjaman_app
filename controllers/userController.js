@@ -126,6 +126,8 @@ const getModelAndMesinName = (type) => {
   }
 };
 
+// Pengguna //
+
 const peminjamanHandler = async (req, res) => {
   try {
     const { type } = req.params;
@@ -325,11 +327,24 @@ const peminjamanHandler = async (req, res) => {
       convertedAkhirPeminjaman
     );
 
-    if (!isAvailable) {
+    // if (!isAvailable) {
+    //   logWithTimestamp("Selected time slot is not available.");
+    //   return res.status(409).json({
+    //     success: false,
+    //     message: "Waktu yang dipilih tidak tersedia. Silakan pilih waktu lain.",
+    //   });
+    // }
+
+    // Tambahkan logging detail
+    logWithTimestamp(
+      `Availability check result: ${JSON.stringify(isAvailable, null, 2)}`
+    );
+
+    if (!isAvailable.available) {
       logWithTimestamp("Selected time slot is not available.");
       return res.status(409).json({
         success: false,
-        message: "Waktu yang dipilih tidak tersedia. Silakan pilih waktu lain.",
+        message: isAvailable.reason,
       });
     }
 
@@ -1349,6 +1364,534 @@ const checkPeminjamanStatus = async (req, res) => {
   // Return whatever results we have
   return res.json(results);
 };
+
+// admin //
+
+const adminPeminjamanHandler = async (req, res) => {
+  try {
+    const { type } = req.params;
+
+    // Validasi role admin
+    if (req.user.role !== "admin") {
+      return res.status(403).json({
+        success: false,
+        message: "Unauthorized. Only admin can use this endpoint.",
+      });
+    }
+
+    if (!["cnc", "laser", "printing"].includes(type)) {
+      return res.status(400).json({ message: "Invalid machine name" });
+    }
+
+    // Handle file size limit error
+    if (req.error && req.error.code === "LIMIT_FILE_SIZE") {
+      return res.status(400).json({
+        success: false,
+        message: "Ukuran file melebihi batas maksimum (2MB)",
+      });
+    }
+
+    // Validasi format email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(req.body.email)) {
+      return res.status(400).json({
+        success: false,
+        message: "Format email tidak valid",
+      });
+    }
+
+    // Validasi basic requirements
+    if (!req.file) {
+      return res.status(400).json({
+        success: false,
+        message: "File wajib diunggah",
+      });
+    }
+
+    // Validasi tipe pengguna
+    if (!req.body.tipe_pengguna) {
+      return res.status(400).json({
+        success: false,
+        message: "Tipe pengguna wajib diisi",
+      });
+    }
+
+    // Validasi nomor identitas berdasarkan tipe pengguna
+    if (!req.body.nomor_identitas) {
+      return res.status(400).json({
+        success: false,
+        message: "Nomor identitas wajib diisi",
+      });
+    }
+
+    // Validasi format nomor identitas
+    let isValidIdentitas = false;
+    switch (req.body.tipe_pengguna) {
+      case "Mahasiswa":
+        isValidIdentitas = /^[0-9]{8,}$/.test(req.body.nomor_identitas);
+        if (!isValidIdentitas) {
+          return res.status(400).json({
+            success: false,
+            message: "Format NIM tidak valid",
+          });
+        }
+        break;
+      case "Pekerja":
+        isValidIdentitas = /^[0-9]{18,}$/.test(req.body.nomor_identitas);
+        if (!isValidIdentitas) {
+          return res.status(400).json({
+            success: false,
+            message: "Format NIP tidak valid",
+          });
+        }
+        break;
+      case "PKL":
+      case "Eksternal":
+        if (!req.body.asal_instansi) {
+          return res.status(400).json({
+            success: false,
+            message: "Asal instansi wajib diisi untuk pengguna external",
+          });
+        }
+        isValidIdentitas = req.body.nomor_identitas.length >= 3;
+        if (!isValidIdentitas) {
+          return res.status(400).json({
+            success: false,
+            message: "Identitas harus memiliki minimal 3 karakter",
+          });
+        }
+        break;
+      default:
+        return res.status(400).json({
+          success: false,
+          message: "Tipe pengguna tidak valid",
+        });
+    }
+
+    const { Model, mesinName } = getModelAndMesinName(type);
+
+    let {
+      email,
+      nama_pemohon,
+      tanggal_peminjaman,
+      awal_peminjaman,
+      akhir_peminjaman,
+      jumlah,
+      jurusan,
+      detail_keperluan,
+      program_studi,
+      kategori,
+      desain_benda,
+      tipe_pengguna,
+      nomor_identitas,
+      asal_instansi,
+    } = req.body;
+    // const { userId, userName } = req.username;
+    const { userId, userName } = req.user;
+
+    // Validasi jika diperlukan
+    if (
+      (kategori === "Praktek" || kategori === "Proyek Mata Kuliah") &&
+      (!detail_keperluan || detail_keperluan.trim().length === 0)
+    ) {
+      return res.status(400).json({
+        success: false,
+        statusCode: res.statusCode,
+        message: "Detail keperluan wajib diisi",
+      });
+    }
+
+    // Konversi jumlah ke number
+    jumlah = Number(jumlah);
+
+    // Tambahkan validasi untuk memastikan jumlah adalah bilangan bulat
+    if (!Number.isInteger(jumlah) || jumlah <= 0) {
+      return res.status(400).json({
+        success: false,
+        statusCode: res.statusCode,
+        message: "Jumlah harus berupa bilangan bulat positif",
+      });
+    }
+
+    let convertedAwalPeminjaman;
+    let convertedAkhirPeminjaman;
+
+    try {
+      // Convert awal_peminjaman
+      if (!awal_peminjaman) {
+        throw new Error("Waktu awal peminjaman harus diisi");
+      }
+      convertedAwalPeminjaman = convertTimeStringToDate(awal_peminjaman);
+
+      // Convert akhir_peminjaman
+      if (!akhir_peminjaman) {
+        throw new Error("Waktu akhir peminjaman harus diisi");
+      }
+      convertedAkhirPeminjaman = convertTimeStringToDate(akhir_peminjaman);
+
+      // Validasi logika waktu
+      if (convertedAkhirPeminjaman <= convertedAwalPeminjaman) {
+        throw new Error(
+          "Waktu akhir peminjaman harus lebih besar dari waktu awal"
+        );
+      }
+    } catch (error) {
+      return res.status(400).json({
+        success: false,
+        statusCode: 400,
+        message: error.message || "Format waktu tidak valid",
+      });
+    }
+
+    // Tentukan alamat_esp berdasarkan nama_mesin
+    let alamat_esp;
+    switch (mesinName.toLowerCase()) {
+      case "cnc milling":
+        alamat_esp =
+          "https://kh8ppwzx-5000.asse.devtunnels.ms/sensor/cnc/buttonPeminjaman";
+        break;
+      case "laser cutting":
+        alamat_esp =
+          "https://kh8ppwzx-5000.asse.devtunnels.ms/sensor/laser/buttonPeminjaman";
+        break;
+      case "3d printing":
+        alamat_esp =
+          "https://kh8ppwzx-5000.asse.devtunnels.ms/sensor/printing/buttonPeminjaman";
+        break;
+      default:
+        return res.status(400).json({ message: "Invalid machine name" });
+    }
+
+    // TRY YANG PERTAMA
+    // try {
+    logWithTimestamp("Checking availability for the selected time slot...");
+
+    const isAvailable = await checkAvailability(
+      Model,
+      tanggal_peminjaman,
+      convertedAwalPeminjaman,
+      convertedAkhirPeminjaman
+    );
+
+    if (!isAvailable) {
+      logWithTimestamp("Selected time slot is not available.");
+      return res.status(409).json({
+        success: false,
+        message: "Waktu yang dipilih tidak tersedia. Silakan pilih waktu lain.",
+      });
+    }
+
+    logWithTimestamp(
+      "Time slot is available, proceeding with saving peminjaman..."
+    );
+
+    const fileLink = await uploadFileToDrive(
+      req.file.buffer,
+      req.file.originalname,
+      req.file.mimetype
+    );
+
+    logWithTimestamp("File uploaded successfully, saving peminjaman...");
+
+    // const fileLink = await uploadFileToDrive(req.file.buffer, req.file.originalname);
+    const peminjamanEntry = await Model.create({
+      nama_mesin: mesinName,
+      alamat_esp, // Menyimpan alamat_esp yang telah ditentukan
+      email,
+      nama_pemohon,
+      tipe_pengguna,
+      nomor_identitas,
+      asal_instansi: tipe_pengguna === "external" ? asal_instansi : undefined,
+      tanggal_peminjaman,
+      awal_peminjaman: convertedAwalPeminjaman,
+      akhir_peminjaman: convertedAkhirPeminjaman,
+      // tanggal_peminjaman,
+      // awal_peminjaman,
+      // akhir_peminjaman,
+      jumlah,
+      // jurusan: tipe_pengguna === 'mahasiswa' ? jurusan : undefined,
+      // program_studi: tipe_pengguna === 'mahasiswa' ? program_studi : undefined,
+      jurusan,
+      detail_keperluan,
+      program_studi,
+      kategori,
+      desain_benda: fileLink, // Simpan link file yang diunggah
+      status: "Menunggu",
+      user: userId,
+      isStarted: false,
+    });
+
+    // Kirim notifikasi ke admin setelah peminjaman dibuat
+    const notificationResult = await sendAdminNotification(
+      peminjamanEntry,
+      type
+    );
+
+    if (!notificationResult.success) {
+      logWithTimestamp("Failed to send admin notifications");
+    }
+
+    res.status(201).json({
+      success: true,
+      statusCode: res.statusCode,
+      message: "Uploaded!",
+      data: {
+        nama_mesin: peminjamanEntry.nama_mesin,
+        alamat_esp, // Sertakan alamat_esp dalam respons jika diperlukan
+        email,
+        nama_pemohon,
+        tipe_pengguna: peminjamanEntry.tipe_pengguna,
+        nomor_identitas: peminjamanEntry.nomor_identitas,
+        asal_instansi: peminjamanEntry.asal_instansi,
+        tanggal_peminjaman: peminjamanEntry.tanggal_peminjaman,
+        awal_peminjaman: peminjamanEntry.awal_peminjaman,
+        akhir_peminjaman: peminjamanEntry.akhir_peminjaman,
+        // tanggal_peminjaman,
+        // awal_peminjaman,
+        // akhir_peminjaman,
+
+        jumlah,
+        jurusan,
+        detail_keperluan,
+        program_studi,
+        kategori,
+        desain_benda: fileLink,
+        status: peminjamanEntry.status,
+        waktu: peminjamanEntry.waktu,
+        user: userName,
+        isStarted: peminjamanEntry.isStarted,
+      },
+    });
+  } catch (err) {
+    console.error(err);
+    if (err.code === "LIMIT_FILE_SIZE") {
+      return res.status(400).json({
+        success: false,
+        message: "Ukuran file melebihi batas maksimum (2MB)",
+      });
+    }
+    res.status(500).json({
+      success: false,
+      message: "Error saat membuat peminjaman atau mengunggah file",
+      error: err.message,
+    });
+  }
+};
+
+const getAdminPeminjamanAllHandler = async (req, res) => {
+  try {
+    // 1. Validasi admin
+    if (!req.user?.userId || req.user.role !== "admin") {
+      return res.status(403).json({
+        success: false,
+        message: "Unauthorized. Only admin can access this endpoint",
+      });
+    }
+
+    const adminId = req.user.userId;
+
+    // 2. Query untuk admin spesifik
+    const adminFilter = { user: adminId };
+
+    // 3. Ambil data
+    const [cncPeminjaman, laserPeminjaman, printingPeminjaman] =
+      await Promise.all([
+        Cnc.find(adminFilter),
+        Laser.find(adminFilter),
+        Printing.find(adminFilter),
+      ]);
+
+    // 4. Gabungkan data
+    let peminjamanForm = [
+      ...cncPeminjaman,
+      ...laserPeminjaman,
+      ...printingPeminjaman,
+    ];
+
+    // 5. Cek ketersediaan data
+    if (!peminjamanForm || peminjamanForm.length === 0) {
+      return res.status(200).json({
+        success: true,
+        statusCode: 200,
+        data: [],
+      });
+    }
+
+    // 6. Sort berdasarkan status
+    peminjamanForm.sort((a, b) => {
+      if (
+        a.status === "Menunggu" &&
+        (b.status === "Disetujui" || b.status === "Ditolak")
+      )
+        return -1;
+      if (
+        (a.status === "Disetujui" || a.status === "Ditolak") &&
+        b.status === "Menunggu"
+      )
+        return 1;
+      return 0;
+    });
+
+    // 7. Format response data
+    const responseData = peminjamanForm
+      .filter((item) => item.user.toString() === adminId.toString())
+      .map((item) => ({
+        id: item._id,
+        nama_pemohon: item.nama_pemohon,
+        nama_mesin: item.nama_mesin,
+        alamat_esp: item.alamat_esp,
+        tipe_pengguna: item.tipe_pengguna,
+        nomor_identitas: item.nomor_identitas,
+        asal_instansi: item.asal_instansi,
+        email: item.email,
+        tanggal_peminjaman: item.tanggal_peminjaman,
+        awal_peminjaman: item.awal_peminjaman,
+        akhir_peminjaman: item.akhir_peminjaman,
+        jumlah: item.jumlah,
+        jurusan: item.jurusan,
+        program_studi: item.program_studi,
+        kategori: item.kategori,
+        detail_keperluan: item.detail_keperluan,
+        desain_benda: item.desain_benda,
+        status: item.status,
+        alasan: item.alasan,
+        waktu: item.waktu,
+        isStarted: item.isStarted,
+      }));
+
+    // 8. Tambahkan statistik untuk admin
+    const stats = {
+      total: responseData.length,
+      statusCount: {
+        Menunggu: responseData.filter((item) => item.status === "Menunggu")
+          .length,
+        Disetujui: responseData.filter((item) => item.status === "Disetujui")
+          .length,
+        Ditolak: responseData.filter((item) => item.status === "Ditolak")
+          .length,
+      },
+    };
+
+    // 9. Kirim response
+    res.status(200).json({
+      success: true,
+      statusCode: 200,
+      stats,
+      data: responseData,
+    });
+  } catch (error) {
+    console.error("Error in getAdminPeminjamanHandler:", error);
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch admin peminjaman data",
+      error: error.message,
+    });
+  }
+};
+
+const getPeminjamanAdminById = async (req, res) => {
+  try {
+    const { peminjamanId } = req.params;
+
+    // Log untuk debugging
+    console.log("Request admin:", req.user);
+    console.log("Searching for peminjaman:", {
+      peminjamanId,
+      adminId: req.user?.userId,
+    });
+
+    // Validasi admin
+    if (!req.user || !req.user.userId || req.user.role !== "admin") {
+      return res.status(403).json({
+        success: false,
+        message: "Unauthorized. Only admin can access this endpoint",
+      });
+    }
+
+    const adminId = req.user.userId;
+
+    // Cari peminjaman
+    let peminjaman = await Cnc.findOne({
+      _id: peminjamanId,
+      user: adminId,
+    }).populate("user", "username email");
+
+    if (!peminjaman) {
+      peminjaman = await Laser.findOne({
+        _id: peminjamanId,
+        user: adminId,
+      }).populate("user", "username email");
+    }
+
+    if (!peminjaman) {
+      peminjaman = await Printing.findOne({
+        _id: peminjamanId,
+        user: adminId,
+      }).populate("user", "username email");
+    }
+
+    if (!peminjaman) {
+      console.log("Peminjaman not found:", { peminjamanId, adminId });
+      return res.status(404).json({
+        success: false,
+        message: "Data peminjaman tidak ditemukan",
+      });
+    }
+
+    const responseData = {
+      id: peminjaman._id,
+      nama_mesin: peminjaman.nama_mesin,
+      alamat_esp: peminjaman.alamat_esp,
+      tipe_pengguna: peminjaman.tipe_pengguna,
+      nomor_identitas: peminjaman.nomor_identitas,
+      asal_instansi: peminjaman.asal_instansi,
+      email: peminjaman.user?.email,
+      nama_pemohon: peminjaman.nama_pemohon,
+      tanggal_peminjaman: peminjaman.tanggal_peminjaman,
+      awal_peminjaman: peminjaman.awal_peminjaman,
+      akhir_peminjaman: peminjaman.akhir_peminjaman,
+      jumlah: peminjaman.jumlah || 0,
+      jurusan: peminjaman.jurusan || "",
+      program_studi: peminjaman.program_studi || "",
+      kategori: peminjaman.kategori || "",
+      detail_keperluan: peminjaman.detail_keperluan || "",
+      desain_benda: peminjaman.desain_benda || "",
+      status: peminjaman.status,
+      alasan: peminjaman.alasan || "",
+      waktu: peminjaman.waktu,
+      isStarted: peminjaman.isStarted || false,
+      admin: {
+        id: peminjaman.user?._id,
+        username: peminjaman.user?.username,
+        email: peminjaman.user?.email,
+      },
+    };
+
+    console.log("Sending response:", responseData);
+
+    return res.status(200).json({
+      success: true,
+      statusCode: 200,
+      data: responseData,
+    });
+  } catch (error) {
+    console.error("Error in getPeminjamanAdminById:", error);
+
+    if (error.name === "CastError") {
+      return res.status(404).json({
+        success: false,
+        message: "Data peminjaman tidak ditemukan",
+      });
+    }
+
+    return res.status(500).json({
+      success: false,
+      message: "Terjadi kesalahan server",
+      error: error.message,
+    });
+  }
+};
 // Jalankan fungsi ini secara berkala, misalnya setiap 5 menit
 const updateInterval = 3 * 60 * 1000; // 5 menit dalam milidetik
 setInterval(updateExpiredPeminjaman, updateInterval);
@@ -1361,6 +1904,9 @@ module.exports = {
   extendPeminjamanHandler,
   updateExpiredPeminjaman,
   checkPeminjamanStatus,
+  adminPeminjamanHandler,
+  getAdminPeminjamanAllHandler,
+  getPeminjamanAdminById,
 };
 
 // ----------------------------------------------------------------------------------------------------------------- //
